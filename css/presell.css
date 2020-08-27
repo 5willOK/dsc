@@ -1,0 +1,355 @@
+a {
+    color: #555;
+}
+
+em,
+i,
+u {
+    font-style: normal;
+}
+
+.show {
+    background-color: #fff;
+    padding-bottom: 80px;
+    margin: 0 auto;
+}
+
+
+/* 轮播图 */
+
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner .pre-banner {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .pre-banner .tempWrap {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .pre-banner .tempWrap #bd {
+    height: 380px;
+    left: 0px;
+    position: absolute;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px
+}
+
+.banner .pre-banner .tempWrap #bd .bd-li {
+    height: 380px;
+    float: left;
+}
+
+.banner .pre-banner .tempWrap #bd .cellphone {
+    background-color: #353535;
+}
+
+.banner .pre-banner .tempWrap #bd .host {
+    background-color: #1EC289;
+}
+
+.banner .pre-banner .tempWrap #bd .discounts {
+    background-color: #483D69;
+}
+
+.banner .pre-banner .tempWrap #bd .bd-li .banner-width {
+    width: 1022px;
+    height: 380px;
+    margin: 0 auto;
+}
+
+.banner .pre-banner .tempWrap #bd .bd-li .banner-width a {
+    width: 1022px;
+    display: block;
+    height: 380px;
+    float: left;
+}
+
+
+/* 小圆点 */
+
+.banner .pre-banner #dotted {
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    margin-left: -31px;
+    bottom: 25px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: hsla(0, 0%, 100%, .3);
+}
+
+.banner .pre-banner #dotted li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.banner .pre-banner #dotted li:last-of-type {
+    margin-right: 0;
+}
+
+.banner .pre-banner #dotted .on {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+/* 主题内容 */
+
+.content {
+    padding: 20px 0 0;
+}
+
+.content .content-h2 {
+    font-size: 24px;
+    color: #2b2b2b;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: "microsoft yahei";
+    margin-bottom: 10px;
+}
+
+.content .content-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content .content-img .content-img-left,
+.content .content-img .content-img-right {
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+
+/* 第二个轮播 */
+
+.content .content-img .content-banner {
+    width: 600px;
+    height: 300px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.content .content-img .content-banner .content-banner-img {
+    width: 2400px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content .content-img .content-banner .content-banner-img li {
+    float: left;
+    width: 600px;
+    height: 300px;
+}
+
+
+/* 第二个小圆点 */
+
+.content-banner .content-banner-circle {
+    width: 600px;
+    height: 14px;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    bottom: 10px;
+    text-align: center;
+}
+
+.content-banner .content-banner-circle li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 8px;
+    border: 1px solid #fff;
+    float: none;
+}
+
+.content-banner .content-banner-circle .oq {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(116, 112, 112, 0.473);
+    border: 0;
+}
+
+
+/* 前进和后退 */
+
+.content-banner .prev,
+.content-banner .next {
+    width: 25px;
+    height: 50px;
+    position: absolute;
+    top: 125px;
+    opacity: 0.6;
+    display: none;
+    background: url(../images/ecsc_icon.png) #a7a7a7 no-repeat;
+    z-index: 99;
+}
+
+.content-banner .prev {
+    left: 0;
+    background-position: -232px 0;
+}
+
+.content-banner .next {
+    right: 0;
+    background-position: -261px 0;
+}
+
+
+/* 预售商品列表 */
+
+.special-list {
+    margin-top: 20px;
+}
+
+.special-list .special-item {
+    margin-top: 10px;
+}
+
+.special-list .special-item .title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.special-list .special-item .title h3 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.special-list .special-item .title .icon i {
+    width: 88px;
+    height: 20px;
+    margin: 10px 0 0 10px;
+    background: url(../images/special-icon.png) no-repeat;
+    background-position: 0 -1px;
+}
+
+
+/* 产品 */
+
+.special-item .special-product ul li {
+    float: left;
+    border: 1px solid #dcdcdc;
+    margin: -1px -1px 0 0;
+}
+
+.special-item .special-product ul li .li-outer {
+    width: 255px;
+    height: auto;
+    padding: 20px 22px;
+}
+
+
+/* 商品图片 */
+
+.special-item .special-product ul li .li-outer .p-img {
+    width: 255px;
+    height: 255px;
+}
+
+.special-product ul li .li-outer .p-img img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+/* 定价 */
+
+.special-product ul li .li-outer .p-price {
+    width: 100%;
+}
+
+.special-product ul li .li-outer .p-price span {
+    color: #f42424;
+    font-size: 24px;
+}
+
+.special-product ul li .li-outer .p-price del {
+    font-size: 12px;
+    color: #999;
+    margin-left: 16px;
+    line-height: 36px
+}
+
+
+/* 简介 */
+
+.special-product ul li .li-outer .p-intro a {
+    display: block;
+    font-size: 14px;
+    color: #2b2b2b;
+    line-height: 24px;
+    font-family: "microsoft yahei";
+    height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+/* 预定信息 */
+
+.special-product ul li .li-outer .p-info,
+.special-product ul li .li-outer .p-info .p-left {
+    width: 100%;
+    overflow: hidden;
+}
+
+.special-product ul li .li-outer .p-info {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+/* 倒计时 */
+
+.special-product ul li .li-outer .p-info .p-left .time {
+    float: left;
+    color: #ffc33a;
+}
+
+.special-product ul li .li-outer .p-info .p-left .reserve em {
+    margin: 0 2px;
+    color: #f42424;
+}
+
+.special-product ul li .li-outer .p-info p,
+.special-product ul li .li-outer .p-info p a {
+    color: #999;
+}
+
+.special-product ul li .li-outer .p-info p:hover a {
+    color: #f42424;
+}
+
+.special-product ul li .li-outer .p-info p {
+    margin: 5px;
+}

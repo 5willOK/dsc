@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大商创商城系统 B2B2C 多商户系统 多店铺商城系统 企业级电商系统</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/electric.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/jquery1.12.4.js"></script>
+    <script src="js/electric.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+
+</head>
+
+<body>
+    <!-- 头部 -->
+
+    <header class="header">
+        <div class="header-topNav">
+            <div class="header-top">
+                <div class="fl header-top-left">
+                    <div class="header-icon   fl">
+                        <i class="iconfont icon-location red"></i>
+                        <span>郑州市</span>
+                        <div class="header-zen"></div>
+                    </div>
+                    <!-- 位置搜索 -->
+                    <script>
+                        $(function() {
+                            var oA = $('.header-letter').children()
+                            var length = $('.header-letter').children().length
+                                // var he = $('#header-lists').find('li').eq(0).height()
+                            oA.each(function() {
+                                var index = $(this).index();
+                                // var ul = -$(this).index() * he
+
+                                $(this).hover(function() {
+                                    // 卷进去的高度
+                                    var ulheight = index * parseInt($(this).position().top - 4)
+                                    if (index < length - 2) {
+                                        $('#header-lists').stop().animate({
+                                            'top': -ulheight
+                                        }, 200, 'linear')
+                                    }
+                                    var bi = ulheight * 100 / 950
+                                    if (index > 0 && index < length - 2) {
+                                        $('.header-bar').stop().animate({
+                                            'top': bi
+                                        }, 200)
+                                    } else if (index == 0) {
+                                        $('.header-bar').css('top', 0)
+                                    }
+                                })
+                            })
+
+                            // 显示
+                            $('.header-icon,.header-location').hover(function() {
+                                $('.header-zen,.header-location').show()
+                                $('.header-icon').addClass('header-if')
+                            }, function() {
+                                $('.header-zen,.header-location').hide()
+                                $('.header-icon').removeClass('header-if')
+                            })
+                        })
+                    </script>
+                    <div class="header-location">
+                        <div class="header-hot">
+                            <a href="#">苏州市</a>
+                            <a href="#">北京市</a>
+                            <a href="#">天津市</a>
+                            <a href="#">上海市</a>
+                        </div>
+                        <div class="header-letter">
+                            <a href="#" data-letter="A">A</a>
+                            <a href="#" data-letter="B">B</a>
+                            <a href="#" data-letter="C">C</a>
+                            <a href="#" data-letter="D">D</a>
+                            <a href="#" data-letter="E">E</a>
+                            <a href="#" data-letter="F">F</a>
+                            <a href="#" data-letter="G">G</a>
+                            <a href="#" data-letter="H">H</a>
+                            <a href="#" data-letter="J">J</a>
+                            <a href="#" data-letter="K">K</a>
+                            <a href="#" data-letter="L">L</a>
+                            <a href="#" data-letter="M">M</a>
+                            <a href="#" data-letter="N">N</a>
+                            <a href="#" data-letter="P">P</a>
+                            <a href="#" data-letter="Q">Q</a>
+                            <a href="#" data-letter="R">R</a>
+                            <a href="#" data-letter="S">S</a>
+                            <a href="#" data-letter="T">T</a>
+                            <a href="#" data-letter="W">W</a>
+                            <a href="#" data-letter="X">X</a>
+                            <a href="#" data-letter="Y">Y</a>
+                            <a href="#" data-letter="Z">Z</a>
+                        </div>
+                        <div class="header-scrollboty">
+                            <div class="header-allList fl">
+                                <ul id="header-lists">
+                                    <li>
+                                        <em data-name="A">A</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="B">B</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="C">C</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="D">D</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="E">E</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="F">F</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="G">G</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="H">H</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="J">J</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="K">K</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="L">L</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="M">M</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="N">N</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="P">P</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="Q">Q</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="R">R</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="S">S</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="T">T</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="W">W</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">安顺市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="X">X</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                            <a href="#">澳门</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="Y">Y</em>
+                                        <div class="header-item-city">
+                                            <a href="#">安庆市</a>
+                                            <a href="#">安阳市</a>
+                                            <a href="#">安康市</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <em data-name="Z">Z</em>
+                                        <div class="header-item-city">
+                                            <a href="#">郑州市</a>
+                                            <a href="#" class="city-selected">周口市</a>
+                                            <a href="#">驻马店市</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-scorllBar">
+                                <p class="header-bar"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fl header-enter">
+                        <a href="login.html"><span class="red">请登录</span></a>
+                        <a href="post.html"><span>免费注册</span></a>
+                    </div>
+                </div>
+                <ul class="fr header-top-right">
+                    <li><a href="#">我的订单</a></li>
+                    <li class="header-spacer"></li>
+                    <li><a href="#">我的浏览</a></li>
+                    <li class="header-spacer"></li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li class="header-spacer"></li>
+                    <li><a href="#">客户服务</a></li>
+                    <li class="header-spacer"></li>
+                    <li class="header-for">
+                        网站导航<i class="iconfont .icon-down">&#xe600;</i>
+                        <div class="header-dorpdown1">
+                            <div class="header-fore-white"></div>
+                            <dl class="header-fore1 fl">
+                                <dt>特色主题</dt>
+                                <dd><a href="#">家用电器</a></dd>
+                                <dd><a href="#">男装女装</a></dd>
+                                <dd><a href="#">鞋靴箱包</a></dd>
+                            </dl>
+                            <dl class="header-fore2 fl">
+                                <dt>促销活动</dt>
+                                <dd><a href="#">拍卖活动</a></dd>
+                                <dd><a href="#">共创商品</a></dd>
+                                <dd><a href="#">积分商城</a></dd>
+                                <dd><a href="#">CMS频道</a></dd>
+                                <dd><a href="#">优惠活动</a></dd>
+                                <dd><a href="#">超值礼包</a></dd>
+                                <dd><a href="#">优惠券</a></dd>
+                                <dd><a href="#">礼品卡</a></dd>
+                                <dd><a href="#">预售商品</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-nav-top">
+                <div class="header-logo fl ">
+                    <a href="index.html"><img src="images/shop_logo.gif" alt=""></a>
+                </div>
+                <div class="header-search fl">
+                    <form action="">
+                        <input type="text" placeholder="手机">
+                        <button>搜商品</button>
+                        <button>搜店铺</button>
+                    </form>
+                    <ul>
+                        <li>
+                            <a href="#">周大福</a>
+                        </li>
+                        <li>
+                            <a href="#">内衣</a>
+                        </li>
+                        <li>
+                            <a href="#">Five Plus</a>
+                        </li>
+                        <li>
+                            <a href="#">手机</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-shopping fr">
+                    <a href="#">
+                        <i class="iconfont icon-gouwuche" id="icon-font"></i>
+                        <span class="red">我的购物车</span>
+                        <em class="em-bord">0</em>
+                    </a>
+                </div>
+                <div class="header-dorpdown">
+                    <div class="header-noggods">
+                        <img src="images/cart-nogoods.png" class="fl" alt="">
+                        <span>购物车中还没有商品，赶紧选购吧！</span>
+                    </div>
+                    <div class="header-white"></div>
+                </div>
+            </div>
+            <div class="header-nav-buttom">
+                <div class="header-cat fl"><a>家用电器</a></div>
+                <div class="header-max-nav fl">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="makeup.html">个体美妆</a></li>
+                        <li><a href="clothstore.html">服装城</a></li>
+                        <li><a href="electric.html" class="active">家用电器</a></li>
+                        <li><a href="shoes.html">鞋靴箱包</a></li>
+                        <li><a href="buyHot.html">聚划算</a></li>
+                        <li><a href="presell.html">预售</a></li>
+                        <li><a href="store.html">店铺街</a></li>
+                        <li><a href="Brands.html">品牌专区</a></li>
+                        <li><a href="javascript:;">公告</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- 全部商品下的tab切换  -->
+            <script>
+                $(function() {
+                    /* 网站导航 */
+                    $('.header-for').hover(function() {
+                        $(this).addClass('header-dorp-fore')
+                        $('.header-dorpdown1').show().slideDown(600, 'linear')
+                    }, function() {
+                        $('.header-dorpdown1').hide()
+                        $(this).removeClass('header-dorp-fore')
+                    })
+
+                    /* 购物车 */
+                    $('.header-shopping,.header-dorpdown').hover(function() {
+                        $('.header-dorpdown').show()
+                    }, function() {
+                        $('.header-dorpdown').hide()
+                    })
+
+                    // 商品分类
+                    $('.header-cat,.header-tab').hover(function() {
+                        $('.header-tab').show()
+                    }, function() {
+                        $('.header-tab').hide()
+                    })
+                    $('.header-item-layer').hide();
+                    var headerItem = $('.header-tab').find('.header-item')
+                    headerItem.each(function(index) {
+                        $(this).hover(function() {
+                            $(this).css('background-color', 'black')
+                            $('.header-item-layer').eq(index).show()
+                        }, function() {
+                            $('.header-item-layer').eq(index).hide()
+                            $(this).css('background-color', '#665E4A')
+                        })
+                    })
+                })
+            </script>
+
+        </div>
+        </div>
+    </header>
+    <!-- 广告 -->
+    <div class="banner">
+        <!-- 广告图 -->
+        <div class="bd">
+            <ul>
+                <li class="now"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- 小圆点 -->
+        <div class="circle">
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 广告左侧导航 -->
+    <div class="sec-father">
+        <div class="left-nav">
+            <div>
+                <div>
+                    <span><a href="#">厨房电器</a></span><br>
+                    <span><a href="#">电饭煲</a><a href="#">电压力锅</a><a href="#">豆浆机</a></span>
+                </div>
+                <div class="second">
+                    <h3>厨房电器</h3>
+                    <div>
+                        <ul>
+                            <li> <a href="">电饭煲</a> </li>
+                            <li> <a href="">电压力锅</a> </li>
+                            <li> <a href="">豆浆机</a> </li>
+                            <li> <a href="">面包机</a> </li>
+                            <li> <a href="">咖啡机</a> </li>
+                            <li> <a href="">微波炉</a> </li>
+                            <li> <a href="">料理/榨汁机</a> </li>
+                            <li> <a href="">电烤箱</a> </li>
+                            <li> <a href="">电磁炉</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="sanjiao"></div>
+            </div>
+            <div>
+                <div>
+                    <span><a href="#">大家电</a></span><br>
+                    <span><a href="#">平板电视</a><a href="#">空调</a><a href="#">冰箱</a></span>
+                </div>
+                <div class="second">
+                    <h3>大家电</h3>
+                    <ul>
+                        <li> <a href="">平板电视</a> </li>
+                        <li> <a href="">空调</a> </li>
+                        <li> <a href="">冰箱</a> </li>
+                        <li> <a href="">洗衣机</a> </li>
+                        <li> <a href="">家庭影院</a> </li>
+                        <li> <a href="">DVD</a> </li>
+                        <li> <a href="">迷你音响</a> </li>
+                        <li> <a href="">热水器</a> </li>
+                        <li> <a href="">冷吧/冰柜</a> </li>
+                    </ul>
+                    <a href="#" class="pic"><img src="images/second.jpg" alt=""></a>
+                </div>
+                <div id="sanjiao"></div>
+            </div>
+            <div>
+                <div>
+                    <span><a href="#">个护健康</a></span><br>
+                    <span><a href="#">按摩椅</a><a href="#">剃须刀</a><a href="#">脱毛器</a></span>
+                </div>
+                <div class="second">
+                    <h3>个护健康</h3>
+                    <ul>
+                        <li> <a href="">按摩椅</a> </li>
+                        <li> <a href="">剃须刀</a> </li>
+                        <li> <a href="">脱毛器</a> </li>
+                        <li> <a href="">口腔护理</a> </li>
+                        <li> <a href="">理发器</a> </li>
+                        <li> <a href="">按摩器</a> </li>
+                        <li> <a href="">足浴盆</a> </li>
+                    </ul>
+                </div>
+                <div id="sanjiao"></div>
+            </div>
+            <div>
+                <div>
+                    <span><a href="#">五金家装</a></span><br>
+                    <span><a href="#">电动工具</a><a href="#">仪表</a><a href="#">水槽</a></span>
+                </div>
+                <div class="second">
+                    <h3>五金家装</h3>
+                    <ul>
+                        <li> <a href="">电动工具</a> </li>
+                        <li> <a href="">仪表</a> </li>
+                        <li> <a href="">水槽</a> </li>
+                    </ul>
+                </div>
+                <div id="sanjiao"></div>
+            </div>
+            <div>
+                <div>
+                    <span><a href="#">生活电器</a></span><br>
+                    <span><a href="#">电风扇</a><a href="#">冷风扇</a><a href="#">净化器</a></span>
+                </div>
+                <div class="second">
+                    <h3>生活电器</h3>
+                    <ul>
+                        <li> <a href="">电风扇</a> </li>
+                        <li> <a href="">冷风韩</a> </li>
+                        <li> <a href="">加湿器</a> </li>
+                        <li> <a href="">扫地机器人</a> </li>
+                        <li> <a href="">吸尘器</a> </li>
+                        <li> <a href="">电话机</a> </li>
+                        <li> <a href="">饮水机</a> </li>
+                        <li> <a href="">取暖器</a> </li>
+                    </ul>
+                </div>
+                <div id="sanjiao"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 热门推荐 -->
+    <div class="hot cen floor">
+        <div class="hot-nav">
+            <h2>热门推荐</h2>
+            <ul>
+                <li>新品首发</li>
+                <li>热销排行</li>
+                <li>精品推荐</li>
+                <li>今日特价</li>
+            </ul>
+        </div>
+        <div class="hot-show">
+            <ul class="hot-now">
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥2999.00</p>
+                    <p class="hot-details">Skyworth/创维 55V9E 55吋4K超高清智能网络平板LED液</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥2999.00</p>
+                    <p class="hot-details">Skyworth/创维 55V9E 55吋4K超高清智能网络平板LED液</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥2999.00</p>
+                    <p class="hot-details">Skyworth/创维 55V9E 55吋4K超高清智能网络平板LED液</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥2999.00</p>
+                    <p class="hot-details">Skyworth/创维 55V9E 55吋4K超高清智能网络平板LED液</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥2999.00</p>
+                    <p class="hot-details">Skyworth/创维 55V9E 55吋4K超高清智能网络平板LED液</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥2999.00</p>
+                    <p class="hot-details">Skyworth/创维 55V9E 55吋4K超高清智能网络平板LED液</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+
+            </ul>
+
+            <ul class="hot-now">
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥128.00</p>
+                    <p class="hot-details">申花饮水机立式冷热办公室冰温热水机家用玻璃节能制冷开</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥128.00</p>
+                    <p class="hot-details">申花饮水机立式冷热办公室冰温热水机家用玻璃节能制冷开</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥128.00</p>
+                    <p class="hot-details">申花饮水机立式冷热办公室冰温热水机家用玻璃节能制冷开</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥128.00</p>
+                    <p class="hot-details">申花饮水机立式冷热办公室冰温热水机家用玻璃节能制冷开</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥128.00</p>
+                    <p class="hot-details">申花饮水机立式冷热办公室冰温热水机家用玻璃节能制冷开</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥128.00</p>
+                    <p class="hot-details">申花饮水机立式冷热办公室冰温热水机家用玻璃节能制冷开</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+
+            </ul>
+
+            <ul class="hot-now">
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥499.00</p>
+                    <p class="hot-details">凉师傅无叶风扇静音落地扇家用立式遥控电风扇办公室循环扇客厅6A</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥499.00</p>
+                    <p class="hot-details">凉师傅无叶风扇静音落地扇家用立式遥控电风扇办公室循环扇客厅6A</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥499.00</p>
+                    <p class="hot-details">凉师傅无叶风扇静音落地扇家用立式遥控电风扇办公室循环扇客厅6A</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥499.00</p>
+                    <p class="hot-details">凉师傅无叶风扇静音落地扇家用立式遥控电风扇办公室循环扇客厅6A</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥499.00</p>
+                    <p class="hot-details">凉师傅无叶风扇静音落地扇家用立式遥控电风扇办公室循环扇客厅6A</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥499.00</p>
+                    <p class="hot-details">凉师傅无叶风扇静音落地扇家用立式遥控电风扇办公室循环扇客厅6A</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+
+            </ul>
+
+            <ul class="hot-now">
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥99.00</p>
+                    <p class="hot-details">SIEMENS/西门子 KA92NV66TI 双开门双门对开门家用变频</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥99.00</p>
+                    <p class="hot-details">SIEMENS/西门子 KA92NV66TI 双开门双门对开门家用变频</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥99.00</p>
+                    <p class="hot-details">SIEMENS/西门子 KA92NV66TI 双开门双门对开门家用变频</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥99.00</p>
+                    <p class="hot-details">SIEMENS/西门子 KA92NV66TI 双开门双门对开门家用变频</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥99.00</p>
+                    <p class="hot-details">SIEMENS/西门子 KA92NV66TI 双开门双门对开门家用变频</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+                <li>
+                    <div class="hot-pic"></div>
+                    <p class="hot-pri">¥99.00</p>
+                    <p class="hot-details">SIEMENS/西门子 KA92NV66TI 双开门双门对开门家用变频</p>
+                    <div class="hot-view"><a href="#">查看详情</a></div>
+                </li>
+            </ul>
+
+            <!-- 左侧楼层导航 -->
+            <div class="jydqLeft">
+                <div class="rmtj active">热门推荐</div>
+                <div class="ppqj">品牌旗舰</div>
+                <div class="cfdq">厨房电器</div>
+                <div class="djd">大家电</div>
+                <div class="ghjk">个护健康</div>
+                <div class="wjjz">五金家装</div>
+                <div class="shdq">生活电器</div>
+                <div class="rtTop iconfont icon-up"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 品牌旗舰 -->
+    <div class="brand-flag cen floor">
+        <h2>品牌旗舰</h2>
+        <div class="pic"></div>
+    </div>
+    <!-- 厨房电器 -->
+    <div class="kitchen cen floor">
+        <div class="kitchen-nav">
+            <h2>厨房电器</h2>
+            <ul>
+                <li>电饭煲</li>
+                <li>电压力锅</li>
+                <li>豆浆机</li>
+                <li>面包机</li>
+                <li>咖啡机</li>
+            </ul>
+        </div>
+        <div class="kitchen-show cen">
+            <!-- 电饭锅 -->
+            <div class="left-bd"><img src="images/1490207291787525979.png" alt="">
+                <div class="left-link">
+                    <a href="#">电饭煲</a>
+                    <a href="#">电压力锅</a>
+                    <a href="#">豆浆机</a>
+                    <a href="#">面包机</a>
+                    <a href="#">咖啡机</a>
+                    <a href="#">微波炉</a>
+                </div>
+            </div>
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">Midea/美的 MB-WFS5017TM电饭煲5L智能正品电饭锅家用3-4-6-7-8人 下单立减20 精研柴</p>
+                        <p class="first-pri">￥300.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">Joyoung/九阳 Y-50C15电压</p>
+                    <p class="second-pri">￥379.00</p>
+                </li>
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">Joyoung/九阳 Y-50C15电压</p>
+                    <p class="second-pri">￥379.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">Joyoung/九阳 Y-50C15电压</p>
+                    <p class="second-pri">￥379.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">Joyoung/九阳 Y-50C15电压</p>
+                    <p class="second-pri">￥379.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">Joyoung/九阳 Y-50C15电压</p>
+                    <p class="second-pri">￥379.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">Joyoung/九阳 Y-50C15电压</p>
+                    <p class="second-pri">￥379.00</p>
+                </li>
+
+            </ul>
+            <!-- 电压力锅 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">美的智能家用多功能双胆电压力锅高压锅饭煲正品WCS5025 5L小家电 5L双胆 智能预约 大面板</p>
+                        <p class="first-pri">￥249.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 豆浆机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">Joyoung/九阳 DJ13B-N621SG全自动豆浆机家用特价正品旗舰店智能 会做饭煲汤 易清洗 双</p>
+                        <p class="first-pri">￥299.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 面包机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">Midea/美的 TLC2000面包机家用全自动智能多功能不锈钢机身触摸屏 逼格好物 钢化上盖 时尚</p>
+                        <p class="first-pri">￥299.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 咖啡机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">Donlim/东菱 DL-KF500S 咖啡机家用全半自动意式商用蒸汽式打奶泡 不锈钢机身 20帕进口泵</p>
+                        <p class="first-pri">￥499.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <ul class="kitchen-brands">
+            <li>
+                <a href="#"><img src="images/brands01.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands02.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands03.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands04.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands05.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands06.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands07.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands08.jpg"></a>
+            </li>
+        </ul>
+        <div class="kitchen-banner">
+            <a href="#"><img src="images/1489539213956559793.jpg"></a>
+        </div>
+    </div>
+    <!-- 大家电 -->
+    <div class="appliance cen floor">
+        <div class="appliance-nav">
+            <h2>大家电</h2>
+            <ul>
+                <li>平板电视</li>
+                <li>空调</li>
+                <li>冰箱</li>
+                <li>洗衣机</li>
+                <li>家庭影院</li>
+            </ul>
+        </div>
+        <div class="appliance-show cen">
+            <!-- 电饭锅 -->
+
+            <div class="left-bd"><img src="images/1489538680174795259.jpg" alt="">
+                <div class="left-link">
+                    <a href="#">平板电视</a>
+                    <a href="#">空调</a>
+                    <a href="#">冰箱</a>
+                    <a href="#">洗衣机</a>
+                    <a href="#">家庭影院</a>
+                    <a href="#">DVD</a>
+                </div>
+            </div>
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">Hisense/海信 LED49EC270W 49吋液晶平板电视机网络wifi彩电50</p>
+                        <p class="first-pri">￥2499.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">Changhong/长虹 55G6 55</p>
+                    <p class="second-pri">¥4099.00</p>
+                </li>
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">Changhong/长虹 55G6 55</p>
+                    <p class="second-pri">¥4099.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">Changhong/长虹 55G6 55</p>
+                    <p class="second-pri">¥4099.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">Changhong/长虹 55G6 55</p>
+                    <p class="second-pri">¥4099.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">Changhong/长虹 55G6 55</p>
+                    <p class="second-pri">¥4099.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">Changhong/长虹 55G6 55</p>
+                    <p class="second-pri">¥4099.00</p>
+                </li>
+
+            </ul>
+            <!-- 电压力锅 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">Haier/海尔 KFR-33GW/10EBBAL13U1 1.5匹智能壁挂式家用空调挂机 智能操控 快速冷暖 送</p>
+                        <p class="first-pri">¥6888.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 豆浆机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">SIEMENS/西门子 KA92NV66TI 双开门双门对开门家用变频无霜电冰箱</p>
+                        <p class="first-pri">¥7999.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 面包机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">Midea/美的MD100V71WDX 10公斤变频滚筒洗衣机全自动家用洗烘一体</p>
+                        <p class="first-pri">￥2300.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 咖啡机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">[OTO]EV-01按摩椅家用全身腰部靠垫多功能全自动太空舱沙发椅老人 正品保障 小巧实用 美臀</p>
+                        <p class="first-pri">￥4999.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <ul class="appliance-brands">
+            <li>
+                <a href="#"><img src="images/brands01.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands02.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands03.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands04.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands05.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands06.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands07.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands08.jpg"></a>
+            </li>
+        </ul>
+        <div class="appliance-banner">
+            <a href="#"><img src="images/1490902077127938739.png"></a>
+        </div>
+    </div>
+    <!-- 个护健康 -->
+    <div class="health cen floor">
+        <div class="health-nav">
+            <h2>个护健康</h2>
+            <ul>
+                <li>按摩椅</li>
+                <li>剃须刀</li>
+                <li>脱毛器</li>
+                <li>口腔护理</li>
+                <li>理发器</li>
+            </ul>
+        </div>
+        <div class="health-show cen">
+            <!-- 电饭锅 -->
+            <div class="left-bd"><img src="images/1490207306365375136.png" alt="">
+                <div class="left-link">
+                    <a href="#">按摩椅</a>
+                    <a href="#">剃须刀</a>
+                    <a href="#">脱毛器</a>
+                    <a href="#">口腔护理</a>
+                    <a href="#">理发器</a>
+                    <a href="#">按摩器</a>
+                </div>
+            </div>
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">[OTO]EV-01按摩椅家用全身腰部靠垫多功能全自动太空舱沙发椅老人 正品保障 小巧实用 美臀</p>
+                        <p class="first-pri">￥4999.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">丁阁仕A6L家用全身按摩椅 零</p>
+                    <p class="second-pri">￥5999.00</p>
+                </li>
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">丁阁仕A6L家用全身按摩椅 零</p>
+                    <p class="second-pri">￥5999.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">丁阁仕A6L家用全身按摩椅 零</p>
+                    <p class="second-pri">￥5999.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">丁阁仕A6L家用全身按摩椅 零</p>
+                    <p class="second-pri">￥5999.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">丁阁仕A6L家用全身按摩椅 零</p>
+                    <p class="second-pri">￥5999.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">丁阁仕A6L家用全身按摩椅 零</p>
+                    <p class="second-pri">￥5999.00</p>
+                </li>
+
+            </ul>
+            <!-- 电压力锅 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">飞利浦剃须刀S5091 男士充电式电动剃须刀刮胡刀胡须刀三刀头正品 一机三用 多效理容 剃须</p>
+                        <p class="first-pri">￥649.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 豆浆机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">飞科FR5222剃毛机毛球修剪器充电式衣服去球器吸打脱毛器除剃毛器 送备用刀头强劲去球不</p>
+                        <p class="first-pri">￥35.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 面包机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">Philips/飞利浦齿间清洁工具可充电 HX8255/02</p>
+                        <p class="first-pri">￥769.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 咖啡机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">正品康夫专业成人理发器电动充电电推剪静音理发工具电推子剃头刀</p>
+                        <p class="first-pri">￥129.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <ul class="health-brands">
+            <li>
+                <a href="#"><img src="images/brands01.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands02.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands03.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands04.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands05.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands06.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands07.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands08.jpg"></a>
+            </li>
+        </ul>
+    </div>
+    <!-- 五金家装 -->
+    <div class="metals cen floor">
+        <div class="metals-nav">
+            <h2>五金家装</h2>
+            <ul>
+                <li>电动工具</li>
+                <li>仪表</li>
+                <li>水槽</li>
+            </ul>
+        </div>
+        <div class="metals-show cen">
+            <!-- 电饭锅 -->
+            <div class="left-bd"><img src="images/1490207320389719688.png" alt="">
+                <div class="left-link">
+                    <a href="#">电动工具</a>
+                    <a href="#">仪表</a>
+                    <a href="#">水槽</a>
+                </div>
+            </div>
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">JOMOO九牧 健康龙头厨房水槽冷热龙头 双槽洗菜盆龙头 33080 冷热厨房龙头 360°旋转</p>
+                        <p class="first-pri">329.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">闽豹家用工具套装 五金工具</p>
+                    <p class="second-pri">￥83.00</p>
+                </li>
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">闽豹家用工具套装 五金工具</p>
+                    <p class="second-pri">￥83.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">闽豹家用工具套装 五金工具</p>
+                    <p class="second-pri">￥83.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">闽豹家用工具套装 五金工具</p>
+                    <p class="second-pri">￥83.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">闽豹家用工具套装 五金工具</p>
+                    <p class="second-pri">￥83.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">闽豹家用工具套装 五金工具</p>
+                    <p class="second-pri">￥83.00</p>
+                </li>
+
+            </ul>
+            <!-- 电压力锅 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">希玛 红外线测温仪手持式工业红外测温枪高精度高温电子温度计 配硬盒 送31件套螺丝批 30</p>
+                        <p class="first-pri">￥146.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 豆浆机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">JOMOO 厨房水槽套餐双槽304不锈钢洗碗池 洗菜盆加厚水盆一体水槽 官方正品 赠运费险 五</p>
+                        <p class="first-pri">￥899.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <ul class="metals-brands">
+            <li>
+                <a href="#"><img src="images/brands01.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands02.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands03.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands04.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands05.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands06.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands07.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands08.jpg"></a>
+            </li>
+        </ul>
+        <div class="metals-banner">
+            <a href="#"><img src="images/1490902087912248158.png"></a>
+        </div>
+    </div>
+    <!-- 生活电器 -->
+    <div class="electric cen floor">
+        <div class="electric-nav">
+            <h2>生活电器</h2>
+            <ul>
+                <li>电风扇</li>
+                <li>冷风扇</li>
+                <li>净化器</li>
+                <li>加湿器</li>
+                <li>扫地机器人</li>
+            </ul>
+        </div>
+        <div class="electric-show cen">
+            <!-- 电饭锅 -->
+            <div class="left-bd"><img src="images/1490207291787525979.png" alt="">
+                <div class="left-link">
+                    <a href="#">电风扇</a>
+                    <a href="#">冷风扇</a>
+                    <a href="#">净化器</a>
+                    <a href="#">加湿器</a>
+                    <a href="#">扫地机器人</a>
+                    <a href="#">吸尘器</a>
+                </div>
+            </div>
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">飞利浦空气净化器AC3252家用室内卧室除甲醛雾霾烟尘PM2.5办公室</p>
+                        <p class="first-pri">￥2233.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">美的壁扇FW40-F3挂壁式工</p>
+                    <p class="second-pri">￥179.00</p>
+                </li>
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">美的壁扇FW40-F3挂壁式工</p>
+                    <p class="second-pri">￥179.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">美的壁扇FW40-F3挂壁式工</p>
+                    <p class="second-pri">￥179.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">美的壁扇FW40-F3挂壁式工</p>
+                    <p class="second-pri">￥179.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">美的壁扇FW40-F3挂壁式工</p>
+                    <p class="second-pri">￥179.00</p>
+                </li>
+
+                <li class="second">
+                    <div class="second-pic"></div>
+                    <p class="second-text">美的壁扇FW40-F3挂壁式工</p>
+                    <p class="second-pri">￥179.00</p>
+                </li>
+
+            </ul>
+            <!-- 电压力锅 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">康佳电风扇塔扇家用塔式落地扇静音无叶风扇定时扇遥控立式大厦扇 换季活动 晒图奖励30元</p>
+                        <p class="first-pri">￥179.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 豆浆机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">【新品上市】美国泰拉蒙空气净化器家用除甲醛雾霾pm2.5卧室</p>
+                        <p class="first-pri">￥5000.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 面包机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">容声空气加湿器大容量大雾量工业商用烟草大型大功率蔬菜水果保鲜</p>
+                        <p class="first-pri">￥280.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 咖啡机 -->
+            <ul class="first-ul">
+                <li class="first">
+                    <div class="first-pic"></div>
+                    <div class="first-details">
+                        <p class="first-text">美国iRobot529经典组合扫地机器人家用全自动智能擦地机国行热卖 告别手动 每日净尘 咨询送</p>
+                        <p class="first-pri">￥2999.00</p>
+                        <div class="first-view">查看详情</div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <ul class="electric-brands">
+            <li>
+                <a href="#"><img src="images/brands01.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands02.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands03.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands04.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands05.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands06.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands07.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brands08.jpg"></a>
+            </li>
+        </ul>
+    </div>
+    <!-- 随手购 -->
+    <div class="casual cen ">
+        <div class="sui-nav">
+            <h2>随手购</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="sui-show">
+            <ul class="sui3600">
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/_P_1536535969602.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥1999.00</div>
+                    <div class="sui-page"> <a href="">山水 F7 5.1家庭影院音响套装电视客厅家用3d环绕组合音箱 电视k歌音响套装 家用 组</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/_P_1536535969602.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥1999.00</div>
+                    <div class="sui-page"> <a href="">山水 F7 5.1家庭影院音响套装电视客厅家用3d环绕组合音箱 电视k歌音响套装 家用 组</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/_P_1536535969602.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥1999.00</div>
+                    <div class="sui-page"> <a href="">山水 F7 5.1家庭影院音响套装电视客厅家用3d环绕组合音箱 电视k歌音响套装 家用 组</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/_P_1536535969602.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥1999.00</div>
+                    <div class="sui-page"> <a href="">山水 F7 5.1家庭影院音响套装电视客厅家用3d环绕组合音箱 电视k歌音响套装 家用 组</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/_P_1536535969602.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥1999.00</div>
+                    <div class="sui-page"> <a href="">山水 F7 5.1家庭影院音响套装电视客厅家用3d环绕组合音箱 电视k歌音响套装 家用 组</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/_P_1536535969602.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥1999.00</div>
+                    <div class="sui-page"> <a href="">山水 F7 5.1家庭影院音响套装电视客厅家用3d环绕组合音箱 电视k歌音响套装 家用 组</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+
+
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/0_P_1490204803489.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥299.00</div>
+                    <div class="sui-page"> <a href="">美悦达电风扇空气涡轮对流循环扇 家用静音遥控台式换气扇节能扇 空气循环对流净化</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/0_P_1490204803489.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥299.00</div>
+                    <div class="sui-page"> <a href="">美悦达电风扇空气涡轮对流循环扇 家用静音遥控台式换气扇节能扇 空气循环对流净化</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/0_P_1490204803489.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥299.00</div>
+                    <div class="sui-page"> <a href="">美悦达电风扇空气涡轮对流循环扇 家用静音遥控台式换气扇节能扇 空气循环对流净化</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/0_P_1490204803489.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥299.00</div>
+                    <div class="sui-page"> <a href="">美悦达电风扇空气涡轮对流循环扇 家用静音遥控台式换气扇节能扇 空气循环对流净化</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/0_P_1490204803489.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥299.00</div>
+                    <div class="sui-page"> <a href="">美悦达电风扇空气涡轮对流循环扇 家用静音遥控台式换气扇节能扇 空气循环对流净化</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/0_P_1490204803489.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥299.00</div>
+                    <div class="sui-page"> <a href="">美悦达电风扇空气涡轮对流循环扇 家用静音遥控台式换气扇节能扇 空气循环对流净化</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/0_P_1490204720800.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥399.00</div>
+                    <div class="sui-page"> <a href="">泰昌足浴盆全自动按摩加热电动洗脚盆泡脚洗脚桶足浴器足疗盆家用 全自动足浴盆 送足</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/0_P_1490204720800.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥399.00</div>
+                    <div class="sui-page"> <a href="">泰昌足浴盆全自动按摩加热电动洗脚盆泡脚洗脚桶足浴器足疗盆家用 全自动足浴盆 送足</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/0_P_1490204720800.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥399.00</div>
+                    <div class="sui-page"> <a href="">泰昌足浴盆全自动按摩加热电动洗脚盆泡脚洗脚桶足浴器足疗盆家用 全自动足浴盆 送足</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/0_P_1490204720800.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥399.00</div>
+                    <div class="sui-page"> <a href="">泰昌足浴盆全自动按摩加热电动洗脚盆泡脚洗脚桶足浴器足疗盆家用 全自动足浴盆 送足</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/0_P_1490204720800.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥399.00</div>
+                    <div class="sui-page"> <a href="">泰昌足浴盆全自动按摩加热电动洗脚盆泡脚洗脚桶足浴器足疗盆家用 全自动足浴盆 送足</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+                <li>
+                    <div class="sui-pic">
+                        <a href="#"><img src="images/0_P_1490204720800.jpg"></a>
+                    </div>
+                    <div class="sui-pri">￥399.00</div>
+                    <div class="sui-page"> <a href="">泰昌足浴盆全自动按摩加热电动洗脚盆泡脚洗脚桶足浴器足疗盆家用 全自动足浴盆 送足</a> </div>
+                    <div class="sui-btn"><a href="#">查看详情 </a></div>
+                </li>
+
+            </ul>
+            <div class="prev iconfont icon-prev"></div>
+            <div class="next iconfont icon-next"></div>
+        </div>
+    </div>
+    <!-- 侧边栏部分 -->
+    <aside class="aside-warp">
+        <!-- 左边黑色部分 -->
+        <div class="aside-left">
+            <ul class="aside-content">
+                <!-- 用户 -->
+                <li class="aside-user">
+                    <a href="javascript:;">
+                        <i></i>
+                    </a>
+                    <div class="aside-user-info">
+                        <div class="userInfo">
+                            <img src="images/user.jpg" alt="">
+                            <div class="user-text">
+                                <p>用户名：暂无</p>
+                                <p>级别：暂无</p>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <button>我的订单</button>
+                            <button>我的收藏</button>
+                        </div>
+                    </div>
+
+                </li>
+                <!-- 购物车 -->
+                <li class="shopCart">
+                    <a href="javascript:;">
+                        <i></i>
+                        <p>购物车
+                            <span>0</span>
+                        </p>
+                    </a>
+                </li>
+                <!-- 我的订单 -->
+                <li class="order">
+                    <a href="javascript:;">
+                        <i></i>
+                    </a>
+                    <div class="order-text"><a href="javascript:;">我的订单</a></div>
+                </li>
+                <!-- 优惠卷 -->
+                <li class="discount">
+                    <a href="javascript:;">
+                        <i></i>
+                    </a>
+                    <div class="discount-text"><a href="javascript:;">优惠券</a></div>
+                </li>
+                <!-- 我的资产 -->
+                <li class="property">
+                    <a href="javascript:;">
+                        <i></i>
+                    </a>
+                    <div class="property-text"><a href="javascript:;">我的资产</a></div>
+                </li>
+                <!-- 我的足迹 -->
+                <li class="footprint">
+                    <a href="javascript:;">
+                        <i></i>
+                    </a>
+                    <div class="footprint-text"><a href="javascript:;">我的足迹</a></div>
+                </li>
+                <!-- 我的收藏 -->
+                <li class="collect">
+                    <a href="javascript:;">
+                        <i></i>
+                    </a>
+                    <div class="collect-text"><a href="javascript:;">我的收藏</a></div>
+                </li>
+                <!-- 邮箱订阅 -->
+                <li class="mailbox">
+                    <a href="javascript:;">
+                        <i></i>
+                    </a>
+                    <div class="mailbox-text"><a href="javascript:;">邮箱订阅</a></div>
+                </li>
+            </ul>
+            <!-- 客服中心 -->
+            <div class="aside-content-bottom">
+                <div class="service">
+                    <a href="javascript:;">
+                        <i></i>
+                    </a>
+                    <div class="service-text"><a href="javascript:;">客服中心</a></div>
+                </div>
+                <div class="backTop">
+                    <a href="javascript:;">
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+            <!-- 邮箱订阅底部栏 -->
+            <div class="mail-bottom">
+                <div class="mail-bottom-box">
+                    <input type="text" placeholder="请输入您的邮箱账号">
+                    <div class="btns">
+                        <div class="subscription">订阅</div>
+                        <div class="unsubscribe">退订</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 右侧隐藏部分 -->
+
+        <div class="aside-right">
+            <!-- 我的足迹 -->
+            <div class="aside-right-title">
+                <h3>我的足迹</h3>
+                <i class="btn"></i>
+            </div>
+            <div class="aside-right-content">
+                <div class="text">空空如也~</div>
+            </div>
+        </div>
+        <div class="aside-right-goods">
+            <!-- 购物车 -->
+            <div class="aside-right-title">
+                <h3>购物车</h3>
+                <i class="btn"></i>
+            </div>
+            <div class="aside-right-content">
+                <div class="text">
+                    <img src="images/cart-nogoods.png" alt=""> 购物车空空的，赶快去挑选心仪的商品吧~
+                    <a href="#">去首页看看</a>
+                </div>
+
+            </div>
+            <div class="goods-price">
+                <div>
+                    <p>共有<span>0</span>件商品 <strong>0.00</strong> </p>
+                </div>
+                <a href="#" class="goPay">
+                    去购物车结算
+                </a>
+            </div>
+        </div>
+        <!-- 蒙版 -->
+        <div class="mark"></div>
+        <div class="aside-login-box">
+            <!-- 提示登录 -->
+            <div class="aside-login">
+                <div class="btn"></div>
+                <div class="title">您尚未登录!</div>
+                <div class="top-text">
+                    <h3 class="text-top">用第三方账号直接登录</h3>
+                    <div class="QQ"><i class="iconfont icon-QQ"></i></div>
+                    <h3 class="text-bottom">账号登录</h3>
+                </div>
+                <form action="" class="formLogin">
+                    <div class="formInfo">
+                        <i class="iconfont icon-name"></i>
+                        <input type="text" placeholder="用户名/邮箱/手机">
+                    </div>
+                    <div class="formInfo">
+                        <i class="iconfont icon-wodemima"></i>
+                        <input type="password" placeholder="密码">
+                    </div>
+                    <div class="formInfo">
+                        <i class="iconfont icon-yanzhengma"></i>
+                        <input type="text" placeholder="验证码">
+                        <img src="images/yzm1.png" class="yzm active">
+                        <img src="images/yzm2.png" class="yzm">
+                        <img src="images/yzm3.png" class="yzm">
+                        <img src="images/yzm4.png" class="yzm">
+                        <img src="images/yzm5.png" class="yzm">
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" name="remember">
+                        <label for="remember" class="lab">请保存我这次的登录信息。</label>
+                    </div>
+                    <div class="bottom">
+                        <button>登&emsp;录</button>
+                        <span>忘记密码？</span>
+                        <span>立即注册</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </aside>
+    <!-- 尾部 -->
+    <footer>
+        <!-- 白色区域 -->
+        <div class="footer-top">
+            <div class="layer">
+                <ul class="fl">
+                    <li>
+                        <i></i>
+                        <span>七天包退</span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>正品保障</span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>好评如潮</span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>闪电发货</span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>权威荣誉</span>
+                    </li>
+                </ul>
+                <div class="footer-top-right fr">
+                    <p>
+                        <i></i>
+                        <span>4001-021-758</span>
+                    </p>
+                    <p>
+                        <i></i>
+                        <span>咨询客服</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 尾巴中部 -->
+        <div class="footer-center">
+            <div class="fnc-warp layer clearfix">
+                <!-- 列表 -->
+                <div class="help-list fl">
+                    <div class="help-item">
+                        <h3>新手上路</h3>
+                        <ul>
+                            <li><a href="#">售后流程</a></li>
+                            <li><a href="#">购物流程</a></li>
+                            <li><a href="#">订购方式</a></li>
+                        </ul>
+                    </div>
+                    <div class="help-item">
+                        <h3>配送与支付</h3>
+                        <ul>
+                            <li><a href="#">货到付款区域</a></li>
+                            <li><a href="#">配送支付智能查询</a></li>
+                            <li><a href="#">支付方式说明</a></li>
+                        </ul>
+                    </div>
+                    <div class="help-item">
+                        <h3>服务保证</h3>
+                        <ul>
+                            <li><a href="#">退换货原则</a></li>
+                            <li><a href="#">售后服务保证</a></li>
+                            <li><a href="#">产品质量保证</a></li>
+                        </ul>
+                    </div>
+                    <div class="help-item">
+                        <h3>联系我们</h3>
+                        <ul>
+                            <li><a href="#">网站故障报告</a></li>
+                            <li><a href="#">选机咨询</a></li>
+                            <li><a href="#">投诉与建议</a></li>
+                        </ul>
+                    </div>
+                    <div class="help-item">
+                        <h3>会员中心</h3>
+                        <ul>
+                            <li><a href="#">资金管理</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">我的订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 二维码 -->
+                <div class="qr-code fr">
+                    <!-- 微信二维码 -->
+                    <div class="qr-item fl">
+                        <div class="code_img"><img src="images/ecjia_qrcode.jpg"></div>
+                        <div class="text">关注微信</div>
+                    </div>
+                    <!-- APP二维码 -->
+                    <div class="qr-item fr">
+                        <div class="code_img"><img src="images/ectouch_qrcode.jpg"></div>
+                        <div class="text">下载APP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 尾巴底部 -->
+        <div class="footer-bot">
+            <div class="layer clearfix">
+                <!-- 第一行 -->
+                <p class="copyright_links">
+                    <a href="#">首页</a>
+                    <span></span>
+                    <a href="#">隐私保护</a>
+                    <span></span>
+                    <a href="#">联系我们</a>
+                    <span></span>
+                    <a href="#">免责条款</a>
+                    <span></span>
+                    <a href="#">公司简介</a>
+                    <span></span>
+                    <a href="#">商家入驻</a>
+                    <span></span>
+                    <a href="#">供应商入驻</a>
+                    <span></span>
+                    <a href="#">意见反馈</a>
+                </p>
+                <!-- 第二行 -->
+                <p class="copyright_links">
+                    <a href="#">b2b2c</a>
+                    <span></span>
+                    <a href="#">多用户商城系统</a>
+                    <span></span>
+                    <a href="#">商城系统</a>
+                    <span></span>
+                    <a href="#">ecjia新零售</a>
+                </p>
+                <p class="copyright_auth clearfix">&nbsp;</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

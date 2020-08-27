@@ -1,0 +1,1056 @@
+.aside-warp {
+    width: 320px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -280px;
+    z-index: 999;
+}
+
+.aside-left {
+    width: 40px;
+    height: 100%;
+    background-color: #000;
+    border-top: 1px solid #000;
+    float: left;
+    position: relative;
+}
+
+
+/* ul */
+
+.aside-content {
+    width: 40px;
+    height: 500px;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    color: #555;
+}
+
+
+/* 所有的li */
+
+.aside-content li {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    color: #fff;
+    border-top: 1px solid #000;
+    position: relative;
+}
+
+
+/* 用户 */
+
+.aside-content .aside-user {
+    position: relative;
+}
+
+.aside-content .aside-user a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside-content a i {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    display: block;
+}
+
+.aside-content .aside-user a:hover {
+    background-color: #f42424;
+}
+
+.aside-content .aside-user a i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background: url(../images/aside.png) 0 0;
+}
+
+.aside-content .aside-user-info {
+    width: 290px;
+    height: 210px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: -292px;
+    top: 0px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    display: none;
+    background-color: #fff;
+}
+
+.aside-content .aside-user-info::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    right: -5px;
+    top: 15px;
+    transform: rotate(45deg);
+}
+
+.aside-user-info .userInfo {
+    width: 260px;
+    height: 140px;
+    margin: 10px auto;
+    border-bottom: 1px dashed #ccc;
+}
+
+.aside-user-info .userInfo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    display: block;
+    float: left;
+}
+
+.aside-user-info .userInfo .user-text {
+    width: 140px;
+    height: 140px;
+    float: left;
+}
+
+.aside-user-info .userInfo .user-text p {
+    margin: 25px 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.aside-user-info .btns {
+    width: 240px;
+    height: 40px;
+    margin: 10px auto;
+    color: #333;
+}
+
+.aside-user-info .btns button {
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    border-style: none;
+    background-color: #FAFAFA;
+    border: 1px solid #e9e9e9;
+    cursor: pointer;
+}
+
+.aside-user-info .btns button:hover {
+    border-color: red;
+}
+
+
+/* 用户 end */
+
+
+/* 购物车 */
+
+.aside-content .shopCart {
+    width: 40px;
+    height: 140px;
+}
+
+.aside-content .shopCart a:hover {
+    background-color: #f42424;
+    background-image: none;
+}
+
+.aside-content .shopCart a {
+    width: 40px;
+    height: 135px;
+    display: block;
+    background: url(../images/aside.png) no-repeat;
+    background-position: -24px -224px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside-content .shopCart a:hover span {
+    background-color: #fff;
+    color: red;
+}
+
+.aside-content .shopCart a i {
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px;
+    background: url(../images/aside.png) 0 -30px;
+}
+
+.aside-content .shopCart a p {
+    width: 20px;
+    height: 100px;
+    margin-left: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.aside-content .shopCart a p span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: 5px;
+}
+
+
+/* 购物车 end */
+
+
+/* 我的订单 */
+
+.aside-content .order>a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside-content .order>a:hover {
+    background-color: #f42424;
+}
+
+.aside-content .order i {
+    background: url(../images/dingdan.png) no-repeat center center;
+}
+
+.aside-content .order .order-text {
+    width: 92px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    /*原来是40px*/
+    font-size: 14px;
+    visibility: hidden;
+}
+
+.aside-content .order .order-text a {
+    color: #d8d8d8;
+}
+
+.aside-content .order .order-text::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+
+/* 订单  end */
+
+
+/* 优惠券 */
+
+.aside-content .discount>a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside-content .discount>a:hover {
+    background-color: #f42424;
+}
+
+.aside-content .discount i {
+    background: url(../images/aside.png) -35px 0;
+}
+
+.aside-content .discount .discount-text {
+    width: 92px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    /*原来是40px*/
+    font-size: 14px;
+    visibility: hidden;
+}
+
+.aside-content .discount .discount-text a {
+    color: #d8d8d8;
+}
+
+.aside-content .discount .discount-text::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+
+/* 优惠券 end */
+
+
+/* 我的资产 */
+
+.aside-content .property>a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside-content .property>a:hover {
+    background-color: #f42424;
+}
+
+.aside-content .property i {
+    background: url(../images/aside.png) 0 -60px;
+}
+
+.aside-content .property .property-text {
+    width: 92px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    /*原来是40px*/
+    font-size: 14px;
+    visibility: hidden;
+}
+
+.aside-content .property .property-text a {
+    color: #d8d8d8;
+}
+
+.aside-content .property .property-text::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+
+/* 我的资产 end */
+
+
+/* 我的足迹 */
+
+.aside-content .footprint>a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside-content .footprint>a:hover {
+    background-color: #f42424;
+}
+
+.aside-content .footprint i {
+    background: url(../images/aside.png) 0 -112px;
+}
+
+.aside-content .footprint .footprint-text {
+    width: 92px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    /*原来是40px*/
+    font-size: 14px;
+    visibility: hidden;
+}
+
+.aside-content .footprint .footprint-text a {
+    color: #d8d8d8;
+}
+
+.aside-content .footprint .footprint-text::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+
+/* 我的足迹 end */
+
+
+/* 我的收藏 */
+
+.aside-content .collect>a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside-content .collect>a:hover {
+    background-color: #f42424;
+}
+
+.aside-content .collect i {
+    background: url(../images/start.png) no-repeat center center;
+}
+
+.aside-content .collect .collect-text {
+    width: 92px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    /*原来是40px*/
+    font-size: 14px;
+    visibility: hidden;
+}
+
+.aside-content .collect .collect-text a {
+    color: #d8d8d8;
+}
+
+.aside-content .collect .collect-text::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+
+/* 我的收藏 end */
+
+
+/* 邮箱订阅 */
+
+.aside-content .mailbox>a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside-content .mailbox>a:hover {
+    background-color: #f42424;
+}
+
+.aside-content .mailbox i {
+    background: url(../images/email.png) no-repeat center center;
+}
+
+.aside-content .mailbox .mailbox-text {
+    width: 92px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    /*原来是40px*/
+    font-size: 14px;
+    visibility: hidden;
+}
+
+.aside-content .mailbox .mailbox-text a {
+    color: #d8d8d8;
+}
+
+.aside-content .mailbox .mailbox-text::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+
+/* 邮箱订阅 end  */
+
+
+/* 客服中心 */
+
+.aside-content-bottom {
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+
+.aside-content-bottom .service {
+    width: 40px;
+    height: 40px;
+}
+
+.aside-content-bottom .service>a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside-content-bottom .service>a:hover {
+    background-color: #f42424;
+}
+
+.aside-content-bottom .service i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background: url(../images/aside.png) 0 -172px;
+}
+
+.aside-content-bottom .service .service-text {
+    width: 92px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    /*原来是40px*/
+    font-size: 14px;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.aside-content-bottom .service .service-text a {
+    color: #d8d8d8;
+}
+
+.aside-content-bottom .service .service-text::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+
+/* 回到顶部 */
+
+.aside-content-bottom .backTop {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.aside-content-bottom .backTop>a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aside-content-bottom .backTop>a:hover {
+    background-color: #f42424;
+}
+
+.aside-content-bottom .backTop i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background: url(../images/aside.png) 0 -198px;
+}
+
+
+/* 右侧隐藏部分 */
+
+
+/* 我的足迹 */
+
+.aside-right {
+    width: 280px;
+    height: 100%;
+    float: left;
+    display: none;
+    position: relative;
+}
+
+.aside-right-title {
+    width: 280px;
+    height: 39px;
+    border-bottom: 1px solid #dedede;
+    background-color: #efefef;
+    line-height: 39px;
+    color: #333;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.aside-right-title h3 {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 10px;
+    float: left;
+}
+
+.aside-right-title .btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/aside.png) 5px -267px;
+    margin: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+.aside-right-content {
+    width: 100%;
+    height: 100%;
+    background: #eceaea;
+}
+
+.aside-right-content .text {
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    color: #333;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+
+/* 购物车 */
+
+.aside-right-goods {
+    width: 280px;
+    height: 100%;
+    float: left;
+    display: none;
+}
+
+.aside-right-goods .aside-right-content {
+    height: 100%;
+    border-top: 1px solid #fff;
+    display: flex;
+    align-items: center;
+}
+
+.aside-right-goods .aside-right-content .text {
+    font-size: 14px;
+    width: 100%;
+    line-height: 25px;
+    height: 120px;
+}
+
+.aside-right-goods .aside-right-content .text a {
+    display: inline-block;
+    color: red;
+}
+
+.aside-right-goods img {
+    width: 110px;
+    height: 68px;
+    display: block;
+    margin: 0 auto;
+    /* margin: 300px auto 0; */
+}
+
+.aside-right-goods .goods-price {
+    width: 280px;
+    height: 70px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.aside-right-goods .goods-price p {
+    font-size: 12px;
+    color: #555;
+    margin-left: 10px;
+}
+
+.aside-right-goods .goods-price p span {
+    color: red;
+}
+
+.aside-right-goods .goods-price p strong {
+    font-size: 16px;
+    margin-left: 140px;
+    color: red;
+}
+
+.aside-right-goods .goods-price p strong::before {
+    content: '￥';
+}
+
+.aside-right-goods .goods-price .goPay {
+    display: block;
+    width: 80%;
+    height: 30px;
+    background-color: red;
+    color: #fff;
+    margin: 10px auto;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+
+/* 模态框 */
+
+aside .mark {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 999;
+    display: none;
+}
+
+aside .aside-login-box {
+    width: 400px;
+    height: 510px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .1);
+    display: none;
+}
+
+aside .aside-login {
+    width: 380px;
+    height: 490px;
+    margin: 10px;
+    background-color: #fff;
+    display: none;
+}
+
+aside .aside-login .btn {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/aside.png) 5px -267px;
+    cursor: pointer;
+}
+
+aside .aside-login .title {
+    width: 350px;
+    height: 31px;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    color: #666;
+    line-height: 31px;
+    padding-left: 30px;
+}
+
+aside .aside-login .top-text {
+    width: 270px;
+    height: 100px;
+    border-top: 1px dashed #e5e5e5;
+    border-bottom: 1px dashed #e5e5e5;
+    position: relative;
+    margin: 40px auto 0;
+}
+
+aside .aside-login .top-text .text-top {
+    width: 190px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #8c8c8c;
+    background-color: #fff;
+    position: absolute;
+    top: -11px;
+    left: 40px;
+    font-weight: normal;
+}
+
+aside .aside-login .top-text .text-bottom {
+    width: 94px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #8c8c8c;
+    background-color: #fff;
+    position: absolute;
+    bottom: -10px;
+    left: 88px;
+    font-weight: normal;
+}
+
+aside .aside-login .top-text .QQ {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #5295F9;
+    line-height: 36px;
+    text-align: center;
+    color: #5295F9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+aside .aside-login .top-text .QQ:hover {
+    color: #fff;
+    background-color: #5295F9;
+}
+
+aside .aside-login .top-text .QQ i {
+    display: block;
+    margin: auto;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+aside .aside-login .formLogin {
+    width: 270px;
+    height: 100%;
+    margin: 40px auto 0;
+}
+
+aside .aside-login .formInfo {
+    width: 268px;
+    height: 38px;
+    border: 1px solid #d2d2d2;
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+aside .aside-login .formInfo i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #e8e8e8;
+    font-size: 18px;
+}
+
+aside .aside-login .formInfo input {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 228px;
+    height: 28px;
+    line-height: 28px;
+    outline: none;
+    border: 0;
+    font-size: 12px;
+}
+
+aside .aside-login .formInfo img {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    width: 142px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+aside .aside-login .formInfo img.active {
+    display: block;
+}
+
+aside .aside-login .item input {
+    display: none;
+}
+
+aside .aside-login .item .lab {
+    padding-left: 18px;
+    background: url(../images/checkbox_gray.png) no-repeat 0px 3px;
+    color: #555;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+aside .aside-login .bottom {
+    width: 270px;
+    height: 60px;
+    margin: 15px auto;
+}
+
+aside .aside-login .bottom button {
+    width: 270px;
+    height: 40px;
+    background-color: #f42424;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+}
+
+aside .aside-login .bottom button:hover {
+    background-color: #ec5051;
+}
+
+aside .aside-login .bottom span:nth-child(2) {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #8c8c8c;
+    float: left;
+    cursor: pointer;
+}
+
+aside .aside-login .bottom span:nth-child(2):hover {
+    color: #f42828;
+}
+
+aside .aside-login .bottom span:nth-child(3) {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #f42828;
+    float: right;
+    cursor: pointer;
+}
+
+aside .aside-login .bottom span:nth-child(3):hover {
+    text-decoration: underline;
+}
+
+
+/* 邮箱底部栏 */
+
+aside .mail-bottom {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    background: #fff;
+    opacity: .9;
+    z-index: -1;
+    display: none;
+}
+
+aside .mail-bottom-box {
+    width: 470px;
+    height: 40px;
+    margin: 10px 390px;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-201%, -70%);
+}
+
+aside .mail-bottom-box input {
+    width: 300px;
+    height: 30px;
+    margin: 5px 20px;
+    outline: none;
+    border: 0;
+}
+
+aside .mail-bottom-box .btns {
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+aside .mail-bottom-box .btns .subscription {
+    width: 40px;
+    height: 42px;
+    float: left;
+    line-height: 42px;
+    background-color: red;
+    opacity: .7;
+    cursor: pointer;
+}
+
+aside .mail-bottom-box .btns .unsubscribe {
+    width: 40px;
+    height: 42px;
+    float: left;
+    line-height: 42px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+/* 邮箱底部栏 end */

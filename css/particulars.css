@@ -1,0 +1,542 @@
+header {
+    border-bottom: 0 !important;
+}
+
+.header {
+    height: 140px !important;
+}
+
+.header-nav {
+    height: 100px !important;
+}
+
+main a {
+    color: #555;
+}
+
+main .particulars-header {
+    height: 40px;
+    background-color: #f8f8f8;
+}
+
+main .particulars-header .header-content {
+    width: 435px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 175px;
+}
+
+main .particulars-header a {
+    display: block;
+    font-weight: bold;
+    float: left;
+}
+
+main .particulars-header .kefu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background: url(../images/dsc-icon.png) -258px 4px;
+    cursor: pointer;
+    float: left;
+}
+
+main .particulars-header .score {
+    width: 122px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px dashed #dbdbdb;
+    background: #fff;
+    margin: 10px 0;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    color: #555;
+    position: relative;
+}
+
+main .particulars-header .score span {
+    display: block;
+    float: left;
+}
+
+main .particulars-header .icon-starts {
+    width: 60px;
+    height: 12px;
+    background: url(../images/dsc-icon.png) -296px -18px;
+    margin: 4px;
+}
+
+main .particulars-header .icon-down {
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    margin: 1px 8px;
+}
+
+main .particulars-header .score .score-con {
+    position: absolute;
+    top: 19px;
+    left: -1px;
+    width: 178px;
+    height: 235px;
+    border: 1px dashed #dbdbdb;
+    cursor: default;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+}
+
+main .particulars-header .score .score-con p {
+    width: 122px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: -2px;
+    left: -1px;
+}
+
+main .particulars-header .score-info {
+    width: 155px;
+    height: 235px;
+    margin: 10px auto;
+}
+
+main .particulars-header .score-info .title {
+    width: 33%;
+    color: #333;
+    float: left;
+}
+
+main .particulars-header .score-info .body {
+    width: 100%;
+}
+
+main .particulars-header .score-info span {
+    width: 33%;
+    color: #8c8c8c;
+    float: left;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+}
+
+main .particulars-header .score-info .body span:nth-child(2) {
+    color: #f42424;
+}
+
+main .particulars-header .score-info .body span:nth-child(2) i {
+    color: #23bc17;
+    display: inline-block;
+    width: 0px;
+    height: 26px;
+    font-size: 14px;
+    margin-left: 7px;
+    font-weight: bold;
+}
+
+main .particulars-header .score-info .foot {
+    width: 100%;
+    height: 40px;
+    padding: 10px 0;
+    border-top: 1px dashed #dbdbdb;
+    margin-top: 10px;
+    float: left;
+}
+
+main .particulars-header .score-info .foot .foot-info {
+    width: 100%;
+    height: 26px;
+}
+
+main .particulars-header .score-info .foot .foot-info span {
+    width: 50%;
+    text-align: left;
+}
+
+main .particulars-header .score-info .foot img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+main .particulars-header .score-info .score-href {
+    width: 155px;
+    height: 25px;
+    padding: 15px 0;
+}
+
+main .particulars-header .score-info .score-href .href-home {
+    width: 68px;
+    height: 23px;
+    border: 1px solid #d2d2d2;
+    line-height: 23px;
+    background: #fff;
+    display: block;
+    margin-left: 40px;
+    text-align: center;
+    color: #8c8c8c;
+    padding: 0 5px;
+}
+
+main .particulars-header .score-info .score-href .href-home i {
+    color: #f42424;
+}
+
+main .particulars-header .score-info .score-href .href-home:hover {
+    color: #f42424;
+    border-color: #f42424;
+}
+
+main .particulars-header .attention {
+    display: block;
+    color: #555;
+    font-size: 12px;
+    margin-left: 10px;
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+}
+
+main .particulars-header .attention i {
+    color: #f42424;
+}
+
+main .particulars-header .attention:hover {
+    color: #f42424;
+}
+
+main .particulars-header .phone-shop {
+    display: block;
+    color: #555;
+    font-size: 12px;
+    margin-left: 10px;
+    line-height: 38px;
+    float: left;
+    position: relative;
+}
+
+main .particulars-header .phone-shop .ewm {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 37px;
+    left: -65px;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+}
+
+main .particulars-header .phone-shop .ewm::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -5px;
+    left: 85px;
+    background-color: #fff;
+}
+
+main .particulars-header .phone-shop .ewm img {
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+
+.particulars-bg {
+    width: 100%;
+    height: 128px;
+    background-color: rgb(237, 237, 237);
+}
+
+.particulars-bg .banner {
+    width: 1200px;
+    height: 128px;
+    margin: 0 auto;
+    background: url(../images/particulars-banner.jpg)no-repeat;
+}
+
+.side-nav {
+    width: 100%;
+    height: 32px;
+    background-color: #000;
+    line-height: 32px;
+}
+
+.side-nav li {
+    color: #fff;
+}
+
+.side-nav .banner {
+    width: 1200px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+.side-nav .banner .select {
+    width: 150px;
+    height: 32px;
+    color: #fff;
+    margin-left: 40px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+
+.side-nav .banner .select img {
+    width: 32px;
+    height: 15px;
+    float: right;
+    margin: 9px 0;
+}
+
+.side-nav .banner .select .select-ul {
+    width: 195px;
+    position: absolute;
+    top: 32px;
+    left: -33px;
+    background-color: #777777;
+    display: none;
+    z-index: 10;
+}
+
+.side-nav .banner .select .select-ul li {
+    width: 160px;
+    height: 40px;
+    padding-left: 35px;
+    text-align: left;
+    line-height: 40px;
+    position: relative;
+}
+
+.side-nav .banner .select .select-ul li .square {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background-color: #fff;
+}
+
+.side-nav .banner .select .select-ul li:hover {
+    background-color: #585555;
+}
+
+.side-nav .banner .side-nav-ul {
+    width: 400px;
+    height: 32px;
+    margin-left: 50px;
+    float: left;
+}
+
+.side-nav .banner li {
+    width: 100px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    float: left;
+}
+
+.side-nav .banner li:hover {
+    background-color: #CF5925;
+}
+
+.side-big {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.side-big ul {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.side-big ul li {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.side-big ul li:nth-child(1) {
+    background: url(../images/side1.jpg)no-repeat center center;
+}
+
+.side-big ul li:nth-child(2) {
+    background: url(../images/side2.jpg)no-repeat center center;
+    display: none;
+}
+
+.side-big .side-btn {
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    opacity: .8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.side-big .side-btn .btns {
+    width: 40px;
+    height: 20px;
+    margin: 5px auto;
+    color: #000000;
+    cursor: pointer;
+}
+
+.side-big .side-btn .btns .btn {
+    width: 20px;
+    height: 20px;
+    float: left;
+    text-align: center;
+    line-height: 20px;
+}
+
+.side-big .side-btn .btns .active {
+    background-color: #000;
+    color: #fff;
+}
+
+main .banner {
+    width: 1200px;
+    height: auto;
+    margin: 50px auto 0;
+}
+
+.side-sm {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.side-sm ul {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.side-sm ul li {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.side-sm ul li:nth-child(1) {
+    background: url(../images/side1.jpg)no-repeat;
+    background-size: 100%;
+}
+
+.side-sm ul li:nth-child(2) {
+    background: url(../images/side2.jpg)no-repeat;
+    background-size: 100%;
+    display: none;
+}
+
+.side-sm .side-btn {
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.side-sm .side-btn .btns {
+    width: 40px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.side-sm .side-btn .btns .btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #777777;
+    margin-left: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.side-sm .side-btn .btns .active {
+    background-color: #000000;
+}
+
+.bottom-con {
+    width: 100%;
+    height: auto;
+}
+
+.bottom-con ul li {
+    width: 298px;
+    height: 423px;
+    border: 1px solid #dedede;
+    margin-bottom: 50px;
+    float: left;
+}
+
+.bottom-con ul li img {
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+}
+
+.bottom-con .bottom-info {
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+}
+
+.bottom-con .bottom-info p {
+    font-size: 12px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #555;
+}
+
+.bottom-con .bottom-info p:hover {
+    color: #f42424;
+}
+
+.bottom-con .bottom-info .price {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.bottom-con .bottom-info .price::before {
+    content: '￥';
+}
+
+.bottom-con .bottom-info .topay {
+    width: 164px;
+    height: 30px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #000;
+    cursor: pointer;
+}

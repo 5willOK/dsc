@@ -1,0 +1,934 @@
+       /* 主体样式 */
+       
+       body {
+           user-select: none;
+       }
+       
+       .main ul li {
+           float: left;
+       }
+       
+       .red {
+           color: #f42828;
+       }
+       
+       .blick {
+           color: #555;
+       }
+       
+       .font12 {
+           font-size: 12px;
+       }
+       
+       .font14 {
+           font-size: 14px;
+       }
+       
+       .main {
+           position: relative;
+           margin: 0 auto;
+       }
+       
+       i,
+       em {
+           font-style: normal;
+       }
+       
+       .layer {
+           width: 1400px;
+           margin: 0 auto;
+       }
+       /* 热门推荐部分 */
+       
+       .hot-sales {
+           height: 152px;
+           background-color: #F5F5F5;
+           margin: 15px auto;
+       }
+       
+       .hatsale-mt {
+           font-size: 16px;
+           color: #fff;
+           background: #f42424;
+           padding: 27px 12px;
+           width: 16px;
+           height: 96px;
+           overflow: hidden;
+           font-family: "microsoft yahei";
+       }
+       
+       .hot-sales .bd {
+           position: relative;
+           height: 110px;
+           overflow: hidden;
+           padding: 20px;
+       }
+       
+       .hot-sales .bd ul li {
+           width: 310px;
+           height: 110px;
+           background-color: white;
+           margin-right: 23px;
+           border: 1px solid white;
+       }
+       
+       .hot-sales .bd ul li:hover {
+           border: 1px solid red;
+       }
+       
+       .hot-sales .bd ul li:last-child {
+           margin-right: 0;
+       }
+       
+       .hot-sales .item img {
+           width: 100%;
+           height: 100%;
+       }
+       
+       .hot-sales .item .item-img {
+           width: 90px;
+           height: 90px;
+           line-height: 110px;
+       }
+       
+       .hot-sales .item>div {
+           margin-left: 10px;
+       }
+       
+       .hot-sales .item .item-name {
+           width: 160px;
+           height: 35px;
+           margin-top: 10px;
+           overflow: hidden;
+       }
+       
+       .hot-sales .item .item-name a:hover {
+           color: red;
+       }
+       
+       .hot-sales .item .item-price {
+           width: 120px;
+           height: 30px;
+           line-height: 30px;
+           color: red;
+           font-weight: bold;
+       }
+       
+       .hot-sales .item-btn {
+           width: 120px;
+           height: 30px;
+           line-height: 30px;
+       }
+       
+       .hot-sales .item-btn a {
+           background-color: red;
+           color: white;
+           font-size: 12px;
+           padding: 3px 10px;
+       }
+       
+       .hot-sales .item-btn a:hover {
+           background: #ec5051;
+           color: #fff;
+       }
+       /* 热门推荐部分 */
+       /* 个人化妆、清洁用品 */
+       
+       .main .main-make {
+           height: 40px;
+           margin-top: 20px;
+       }
+       
+       .main .crumbs {
+           height: 25px;
+           line-height: 25px;
+           width: 145px;
+           border: 1px solid #ccc;
+       }
+       
+       .main .crumbs:hover .menu-drop {
+           display: block;
+           border: 1px solid red;
+       }
+       
+       .main .crumbs:hover {
+           border: 1px solid red;
+           border-bottom: 0;
+       }
+       
+       .crumbs-main {
+           position: relative;
+       }
+       
+       .main .crumbs-main a {
+           color: #555;
+           font-size: 12px;
+           margin-left: 10px;
+       }
+       
+       .menu-drop {
+           width: 225px;
+           height: 90px;
+           border: 1px solid #ccc;
+           position: absolute;
+           left: -1px;
+           top: 25px;
+           display: none;
+           z-index: 6;
+           background-color: white;
+       }
+       
+       .menu-drop ul li {
+           width: 70px;
+           text-align: center;
+       }
+       
+       .menu-drop ul li a {
+           font-size: 12px;
+           color: #555;
+       }
+       
+       .menu-drop ul li a:hover {
+           color: red;
+       }
+       /* 主体内容部分 */
+       
+       .container .selector {
+           border: 1px dashed #ccc;
+       }
+       
+       .brand_img {
+           width: 1380px;
+           margin: 15px auto;
+           display: flex;
+       }
+       /* 品牌 */
+       
+       .brand_name {
+           width: 100px;
+           height: 60px;
+           margin-left: 20px;
+           font-size: 12px;
+           color: #ccc;
+       }
+       /* 图片部分 */
+       
+       .brand_select_more {
+           width: 1150px;
+       }
+       /* 1 */
+       
+       .all-a-z {
+           width: 100%;
+           height: 36px;
+           line-height: 36px;
+           margin-bottom: 20px;
+           display: none;
+       }
+       
+       .all-a-z ul li {
+           width: 26px;
+           height: 26px;
+           text-align: center;
+           line-height: 26px;
+           border: 1px solid white;
+           cursor: pointer;
+       }
+       
+       .all-a-z ul li:hover {
+           border: 1px solid red;
+           color: red;
+       }
+       
+       .all-a-z .all-brand {
+           width: 70px;
+       }
+       
+       .all-a-z .other-brand {
+           width: 50px;
+       }
+       /* 2 */
+       
+       .wrap_brand>div {
+           float: left;
+           border: 1px solid #eee;
+       }
+       
+       .brand_img_word {
+           width: 118px;
+           height: 52px;
+           position: relative;
+       }
+       
+       .brand_img_word span {
+           display: block;
+           text-align: center;
+           line-height: 52px;
+           color: red;
+           font-size: 12px;
+       }
+       
+       .brand_img_word img {
+           width: 118px;
+           position: absolute;
+       }
+       
+       .brand_img_word:hover {
+           border: 1px solid red;
+       }
+       
+       .brand_img_word:hover img {
+           display: none;
+       }
+       
+       .box {
+           width: 1200px;
+       }
+       /* 3 */
+       
+       .zimu_list {
+           width: 100%;
+           display: none;
+       }
+       
+       .zimu_list ul li {
+           width: 128px;
+       }
+       
+       .zimu_list ul li:first-child {
+           margin-left: 10px;
+       }
+       
+       .zimu_list ul li .choose-ico:hover {
+           color: red;
+       }
+       
+       .zimu_list input[type="checkbox"] {
+           display: none;
+       }
+       
+       .choose-ico {
+           width: 80px;
+           height: 20px;
+           margin: 9px 6px 0 0;
+           padding-left: 18px;
+           display: inline-block;
+           background: url(../images/checkbox_12x12.png) no-repeat;
+           font-size: 12px;
+           font-style: normal;
+           color: #005aa0;
+       }
+       
+       .choose-ico-checked {
+           background: url(../images/checked_12x12.png) no-repeat;
+       }
+       
+       .enter_yes_no {
+           width: 100%;
+           height: 25px;
+           margin-top: 10px;
+           display: none;
+       }
+       
+       .ct_auto {
+           width: 130px;
+           height: 30px;
+           margin: 0 auto;
+       }
+       
+       .ct_auto .botton {
+           display: block;
+           width: 50px;
+           height: 25px;
+           line-height: 25px;
+           text-align: center;
+           border: 1px solid #ccc;
+           color: #ccc;
+           font-size: 12px;
+           cursor: pointer;
+       }
+       
+       .ct_auto .yes_bt {
+           margin-right: 10px;
+           background-color: red;
+           color: white;
+           border: 1px solid red;
+           display: none;
+       }
+       /* 多选部分*/
+       
+       .sl-ext {
+           color: #ccc;
+       }
+       
+       .choose_open {
+           width: 20px;
+           height: 20px;
+           line-height: 20px;
+           text-align: center;
+           border: 1px solid #ccc;
+           margin-right: 6px;
+           cursor: pointer;
+       }
+       
+       .choose_open:hover {
+           color: red;
+           border: 1px solid red;
+       }
+       
+       .icon-down1 {
+           width: 60px;
+           height: 20px;
+           border: 1px solid #ccc;
+           font-size: 12px;
+           line-height: 20px;
+           text-align: center;
+           cursor: pointer;
+       }
+       
+       .icon-down1:hover {
+           color: red;
+           border: 1px solid red;
+       }
+       
+       .icon-down i {
+           width: 20px;
+           height: 20px;
+       }
+       /* 销量 */
+       
+       .filter {
+           margin-top: 20px;
+           border: 1px solid #ccc;
+       }
+       
+       .filter-wrap {
+           padding: 7px 0 6px;
+           height: 25px;
+           line-height: 25px;
+       }
+       
+       .filter-sort a {
+           float: left;
+           display: block;
+           padding: 0 20px;
+           color: #555;
+           border-right: 1px solid #d2d2d2;
+       }
+       
+       .filter-sort a span {
+           float: left;
+       }
+       
+       .filter-sort a i {
+           margin-left: 5px;
+           float: left;
+       }
+       
+       .filter-sort a:first-child {
+           color: red;
+       }
+       
+       .filter-sort a:hover {
+           color: red;
+       }
+       /* 价格筛选 */
+       
+       .filter-range {
+           margin-left: 15px;
+           position: relative;
+       }
+       
+       .fprice {
+           border-right: 1px solid #ccc;
+       }
+       
+       .fP-box {
+           margin-right: 20px;
+       }
+       
+       .fP-box input {
+           width: 58px;
+           height: 23px;
+           border: 1px solid #d2d2d2;
+           outline: 0;
+           padding: 0 5px;
+       }
+       
+       .fP-expand {
+           position: absolute;
+           z-index: 99;
+           border: 1px solid #dcdcdc;
+           background: #EFECEB;
+           width: 161px;
+           left: 0px;
+           top: 24px;
+           text-align: center;
+           height: 40px;
+           line-height: 40px;
+           display: none;
+       }
+       
+       .fP-expand a {
+           border: 1px solid #ccc;
+           height: 18px;
+           line-height: 18px;
+           color: #333;
+           padding: 0 10px;
+           display: inline-block;
+           outline: 0;
+           cursor: pointer;
+           background-color: #f7f7f7;
+       }
+       
+       .ui-btn-clear {
+           margin-right: 20px;
+       }
+       
+       .fP-expand .ui-btn-submit {
+           color: #fff;
+           border-color: #f42424;
+           background-color: #f42424;
+           background-repeat: repeat-x;
+       }
+       
+       .fcheckbox {
+           display: flex;
+       }
+       
+       .ui-label {
+           padding-left: 18px;
+           background: url(../images/checkbox_12x12.png) 0 2px no-repeat;
+       }
+       
+       .filter-range .ui-label:hover {
+           color: red;
+           cursor: pointer;
+           color: #f42424;
+           background: url(../images/checkbox_cur_12x12.png) 0 2px no-repeat;
+       }
+       
+       .goods-list .gl-item .p-operate a:hover .ui-label {
+           background: url(../images/checkbox_cur_12x12.png) 0 2px no-repeat;
+       }
+       
+       .ui-checkbox {
+           display: none;
+       }
+       
+       .checkbox_item {
+           margin-left: 20px;
+       }
+       /* 大图小图 */
+       
+       .button-page {
+           float: left;
+           margin-right: 10px;
+           border-right: 1px solid #ccc;
+           width: 100px;
+       }
+       
+       .pageState {
+           float: left;
+       }
+       
+       .button-page a {
+           display: block;
+           float: left;
+           width: 18px;
+           height: 14px;
+           line-height: 14px;
+           border: 1px solid #d2d2d2;
+           text-align: center;
+           margin: 4.5px 0 0 5px;
+           cursor: default;
+       }
+       
+       .button-page a .iconfont {
+           font-size: 12px;
+           color: #d2d2d2;
+       }
+       
+       .styles ul li {
+           width: 80px;
+           text-align: center;
+           cursor: pointer;
+       }
+       
+       .styles ul li:hover span {
+           color: red;
+       }
+       
+       .styles ul li:hover {
+           color: red;
+       }
+       
+       .styles ul li .iconfont {
+           color: #d2d2d2;
+           margin-right: 2px;
+       }
+       
+       .styles ul li:first-child {
+           border-right: 1px solid #ccc;
+       }
+       
+       .g-view {
+           margin-top: 20px;
+       }
+       /* 主体图片部分 */
+       /* 左边显示的内容 */
+       
+       .goods-list {
+           min-height: 500px;
+           float: left;
+           width: 1180px;
+       }
+       
+       .goods-list .gl-item {
+           width: 210px;
+           height: 430px;
+           position: relative;
+           /* z-index: 1; */
+           border: 1px solid white;
+           padding: 11px;
+           display: block;
+       }
+       
+       .goods-list .gl-item:hover {
+           box-shadow: 0 0 8px #ccc;
+           transition: all .8s;
+           transform: translateY(-6px);
+           z-index: 2;
+       }
+       
+       .goods-list .p-img {
+           width: 210px;
+           height: 210px;
+       }
+       
+       .goods-list .p-img img {
+           width: 100%;
+           height: 100%;
+       }
+       
+       .sider {
+           margin-top: 12px;
+           width: 100%;
+           overflow: hidden;
+       }
+       
+       .sider ul li {
+           float: left;
+           border: 1px solid #d2d2d2;
+           padding: 1px;
+           background: #fff;
+           margin-right: 2px;
+           cursor: pointer;
+       }
+       
+       .sider ul li:hover {
+           border: 1px solid red;
+       }
+       
+       .p-lie {
+           overflow: hidden;
+           width: 100%;
+           line-height: 30px;
+           margin-top: 8px;
+       }
+       
+       .p-lie .p-price {
+           font-size: 20px;
+       }
+       
+       .p-price {
+           color: #f42424;
+       }
+       
+       .p-num {
+           color: #8c8c8c;
+       }
+       
+       .p-num em {
+           font-weight: bold;
+       }
+       
+       .gl-item .p-name {
+           margin-top: 6px;
+       }
+       
+       .gl-item .p-name a {
+           height: 35px;
+           overflow: hidden;
+           display: block;
+           color: #555;
+       }
+       
+       .gl-item .p-name a:hover {
+           color: red;
+       }
+       
+       .gl-item .p-store {
+           width: 100%;
+           line-height: 24px;
+           margin-top: 3px;
+       }
+       
+       .p-store a {
+           display: inline-block;
+       }
+       
+       .p-store .store {
+           color: #8c8c8c;
+           max-width: 120px;
+           overflow: hidden;
+           text-overflow: ellipsis;
+           white-space: nowrap;
+           vertical-align: bottom;
+       }
+       
+       .p-activity {
+           font-size: 12px;
+       }
+       
+       .p-store .iconfont {
+           color: #7b75f3;
+       }
+       
+       .p-store .iconfont:hover {
+           color: red;
+       }
+       
+       .p-store .minimum {
+           float: right;
+           color: #8c8c8c;
+       }
+       
+       .p-activity {
+           width: 100%;
+           display: block;
+           overflow: hidden;
+           margin-top: 5px;
+           height: 16px;
+       }
+       
+       .p-activity .tag {
+           float: left;
+           height: 16px;
+           line-height: 16px;
+           color: #fff;
+           background-color: #f42424;
+           padding: 0 7px;
+           position: relative;
+           margin-right: 5px;
+       }
+       
+       .p-activity .tac-mh {
+           background-color: #f861af;
+       }
+       
+       .p-activity .tag i {
+           position: absolute;
+           width: 8px;
+           height: 8px;
+           background-color: #fff;
+           border-radius: 50%;
+           top: 4px;
+           overflow: hidden;
+       }
+       
+       .p-activity .i-left {
+           left: -4px;
+       }
+       
+       .p-activity .i-right {
+           right: -4px;
+       }
+       
+       .p-operate {
+           margin-top: 10px;
+           overflow: hidden;
+           padding: 0 0 10px 1px;
+       }
+       
+       .p-operate a {
+           display: block;
+           float: left;
+           width: 53px;
+           height: 28px;
+           line-height: 28px;
+           border: 1px dotted #dbdbdb;
+           text-align: center;
+           margin-left: -1px;
+           position: relative;
+           z-index: 2;
+           color: #555;
+           font-size: 12px;
+       }
+       
+       .p-operate a:hover {
+           border: 1px dashed red;
+       }
+       
+       .p-operate .addcart {
+           width: 88px;
+           color: red;
+       }
+       
+       .p-operate .addred {
+           color: red;
+       }
+       /* 右边隐藏的部分 */
+       
+       .goods-spread {
+           float: right;
+           width: 218px;
+           color: #959595;
+       }
+       
+       .gstop {
+           width: 23px;
+           height: 23px;
+           line-height: 23px;
+           text-align: center;
+           border: 1px dotted #d2d2d2;
+           background-color: #f8f8f8;
+           display: block;
+           color: #959595;
+       }
+       
+       .goods-spread .gs-warp {
+           width: 190px;
+           padding: 0 15px 10px 15px;
+           border: 1px solid #d2d2d2;
+           margin-top: 8px;
+           display: block;
+       }
+       
+       .goods-spread .gs-tit {
+           color: #8c8c8c;
+           font-size: 16px;
+           height: 42px;
+           line-height: 42px;
+       }
+       
+       .goods-spread .gs-list {
+           overflow: hidden;
+       }
+       
+       .opacity_img {
+           margin-bottom: 10px;
+       }
+       
+       .opacity_img .p-img {
+           width: 190px;
+           height: 190px;
+       }
+       
+       .gs-list .p-name {
+           margin: 5px 0;
+           width: 190px;
+       }
+       
+       .gs-list .p-name a {
+           height: 34px;
+           overflow: hidden;
+           display: block;
+           color: #555;
+           font-size: 12px;
+       }
+       
+       .gs-list .p-name a:hover {
+           color: red;
+       }
+       
+       .gs-list .p-num {
+           color: #8c8c8c;
+           font-size: 12px;
+       }
+       /* 猜你喜欢 */
+       
+       .getGuessGoods {
+           height: 320px;
+           margin-top: 40px;
+       }
+       
+       .getGuessGoods .ftit {
+           overflow: hidden;
+           padding: 0 0 20px;
+           height: 35px;
+           text-align: center;
+           font-size: 21px;
+           line-height: 33px;
+       }
+       
+       .getGuessGoods .ftit-delr {
+           background: url(../images/dian-ico2.png) repeat-x 0 18px;
+       }
+       
+       .getGuessGoods .ftit h3 {
+           display: inline;
+           padding: 0 50px;
+           background-color: #fff;
+           font-weight: 400;
+           font-size: 21px;
+           color: #555;
+       }
+       
+       .getGuessGoods .clearfix {
+           clear: both;
+       }
+       
+       .gl-list li {
+           float: left;
+           width: 190px;
+           height: auto;
+           position: relative;
+           z-index: 2;
+           margin-right: 10px;
+       }
+       
+       .opacity_img .p-img img {
+           width: 190px;
+           height: 190px
+       }
+       
+       .opacity_img .p-img img:hover {
+           transition: all .6s;
+           opacity: .6;
+       }
+       
+       .gl-list .opacity_img .p-name a:hover {
+           color: red;
+       }
+       
+       .gl-list li .p-img {
+           width: 190px;
+           height: 190px;
+       }
+       
+       .gl-list li .p-price {
+           font-size: 20px;
+           margin-top: 6px;
+       }
+       
+       .gl-list li .p-name {
+           width: 100%;
+           height: 20px;
+           line-height: 20px;
+           overflow: hidden;
+           margin-top: 5px;
+           white-space: nowrap;
+           text-overflow: ellipsis;
+           font-size: 12px;
+       }
+       
+       .gl-list li .p-name a {
+           color: #555;
+           font-size: 12px;
+       }
+       
+       .gl-list li .p-num {
+           margin-top: 7px;
+           color: #8c8c8c;
+       }

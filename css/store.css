@@ -1,0 +1,156 @@
+main .bg {
+    width: 100%;
+    height: 200px;
+    background: url(../images/bg.jpg) no-repeat center center;
+}
+
+main .banner {
+    width: 1200px;
+    height: auto;
+    margin: 20px auto 0;
+}
+
+main ul {
+    width: 990px;
+    height: 100%;
+    float: left;
+    margin-left: 45px;
+}
+
+main ul li {
+    float: left;
+    width: 100px;
+    height: 30px;
+    text-align: left;
+    color: #555;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+main ul li span {
+    cursor: pointer;
+}
+
+main ul li span.active {
+    color: red;
+}
+
+main ul li span:hover {
+    color: red;
+}
+
+
+/* 分类 */
+
+main .classify {
+    width: 1196px;
+    height: 48px;
+    border: 1px dashed #d2d2d2;
+}
+
+main .classify .classify-title {
+    width: 120px;
+    height: 48px;
+    line-height: 48px;
+    float: left;
+    text-align: center;
+    color: #8c8c8c;
+    font-size: 12px;
+}
+
+main .classify ul li {
+    height: 48px;
+    line-height: 48px;
+}
+
+
+/* 省份 */
+
+main .province {
+    width: 1196px;
+    height: 120px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #d2d2d2;
+    border-left: 1px dashed #d2d2d2;
+    border-right: 1px dashed #d2d2d2;
+}
+
+main .province .province-title {
+    width: 120px;
+    height: 60px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    color: #8c8c8c;
+    font-size: 12px;
+}
+
+.header-item-layer a {
+    font-size: 12px;
+}
+
+
+/* 城市 */
+
+main .city .city-title {
+    width: 120px;
+    height: auto;
+    float: left;
+    text-align: center;
+    color: #8c8c8c;
+    font-size: 12px;
+}
+
+main .city {
+    width: 1196px;
+    min-height: 30px;
+    height: auto;
+    padding-top: 10px;
+    border-bottom: 1px dashed #d2d2d2;
+    border-left: 1px dashed #d2d2d2;
+    border-right: 1px dashed #d2d2d2;
+    display: none;
+}
+
+
+/* 排序方式 */
+
+main .sortord {
+    width: 1196px;
+    height: 40px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #d2d2d2;
+    border-left: 1px dashed #d2d2d2;
+    border-right: 1px dashed #d2d2d2;
+}
+
+main .sortord .sortord-title {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    color: #8c8c8c;
+    font-size: 12px;
+}
+
+main .sortord button {
+    width: 80px;
+    height: 30px;
+    margin: 5px 0 5px 10px;
+    float: left;
+    cursor: pointer;
+    color: #8c8c8c;
+    font-size: 12px;
+    border: 1px solid #d2d2d2;
+    background-color: #fff;
+}
+
+main .sortord button .iconfont {
+    font-size: 12px;
+}
+
+main .falls {
+    width: 1200px;
+    height: 100%;
+}

@@ -1,0 +1,485 @@
+main .location-nav {
+    width: 99%;
+    height: 25px;
+    padding: 7px;
+    background-color: #f8f8f8;
+}
+
+main .nav-banner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-con-item {
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    color: #555;
+    float: left;
+}
+
+.menu-drop {
+    width: 76px;
+    border: 1px solid #d2d2d2;
+    line-height: 23px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+}
+
+.menu-drop .list {
+    width: 210px;
+    border: 1px solid red;
+    position: absolute;
+    top: 23px;
+    left: -1px;
+    z-index: 10;
+    background-color: #fff;
+    display: none;
+    cursor: default;
+    color: #555;
+}
+
+.menu-drop .list::before {
+    content: '';
+    width: 76px;
+    height: 2px;
+    border-top: 2px solid #fff;
+    position: absolute;
+    top: -2px;
+    left: 0px;
+}
+
+.menu-drop .list li {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    margin-left: 10px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.menu-drop .list li a:hover {
+    color: #f42424;
+}
+
+.menu-drop:hover {
+    border-color: #f42424;
+}
+
+.menu-drop:hover .list {
+    display: block;
+}
+
+.nav-con-item .r {
+    display: block;
+    float: left;
+    transform: rotate(-90deg);
+    margin-left: 5px;
+}
+
+.nav-con-item .icon-Down1 {
+    font-size: 12px;
+}
+
+main .nav-banner p {
+    width: 300px;
+    height: 25px;
+    line-height: 25px;
+    color: #8c8c8c;
+    float: left;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+main .container {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+
+/* 产品信息 */
+
+.product-info {
+    width: 100%;
+}
+
+.product-info-l {
+    width: 400px;
+    float: left;
+}
+
+
+/* 放大镜 */
+
+main .container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.magnifying-glass {
+    width: 398px;
+    height: 498px;
+    border: 1px solid #d2d2d2;
+    position: relative;
+    /* float: left; */
+}
+
+.magnifying-glass-top {
+    width: 398px;
+    height: 400px;
+}
+
+.md-img {
+    width: 398px;
+    height: 398px;
+    border-bottom: 1px solid #d2d2d2;
+    display: none;
+}
+
+.md-img.active {
+    display: block;
+}
+
+.bottom-img {
+    width: 398px;
+    height: 98px;
+}
+
+.bottom-img i {
+    color: #ccc;
+}
+
+.prev {
+    width: 30px;
+    height: 98px;
+    line-height: 98px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    background-color: #f8f8f8;
+}
+
+.next {
+    width: 30px;
+    height: 98px;
+    line-height: 98px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+    background-color: #f8f8f8;
+}
+
+.sm-img-item {
+    width: 70px;
+    height: 98px;
+    float: left;
+    position: relative;
+}
+
+.sm-img-item img {
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sm-img-item .active {
+    border: 1px solid red;
+}
+
+.big-glass {
+    width: 398px;
+    height: 498px;
+    border: 1px solid #d2d2d2;
+    position: absolute;
+    top: 0;
+    left: 410px;
+    overflow: hidden;
+    display: none;
+    z-index: 10;
+}
+
+.magnifying-glass .mask {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: skyblue;
+    opacity: .3;
+    cursor: move;
+    display: none;
+}
+
+.lg-img {
+    width: 800px;
+    height: 800px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lg-img.active {
+    display: block;
+}
+
+
+/* 收藏 */
+
+.collect {
+    width: 400px;
+    height: 100px;
+    color: #555;
+    font-size: 12px;
+}
+
+.contrast {
+    width: 55px;
+    height: 15px;
+    line-height: 15px;
+    float: left;
+    margin: 20px 0 0 20px;
+    border-right: 1px solid #d2d2d2;
+    cursor: pointer;
+}
+
+.contrast:hover {
+    color: #f42424;
+}
+
+.contrast i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.contrast i.check1 {
+    background: url(../images/checkbox_gray.png) no-repeat center center;
+}
+
+.check2 {
+    background: url(../images/checkbox_red.png) no-repeat center center;
+}
+
+.check3 {
+    background: url(../images/checked_red.png) no-repeat center center;
+    background-size: 100%;
+}
+
+.collect-con {
+    width: 80px;
+    height: 15px;
+    line-height: 15px;
+    float: left;
+    margin: 20px 0 0 0;
+    border-right: 1px solid #d2d2d2;
+    cursor: pointer;
+}
+
+.collect-con:hover {
+    color: #f42424;
+}
+
+.collect-con .icon-xiaoxingxing {
+    font-size: 18px;
+}
+
+
+/* 商品信息 */
+
+.good-info {
+    width: 580px;
+    height: 440px;
+    font-size: 12px;
+    color: #555;
+    margin: 0 20px;
+    float: left;
+}
+
+.good-info .title {
+    width: 580px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.good-info .card {
+    width: 580px;
+    height: 120px;
+    padding: 22px 0 12px 0;
+    background: url(../images/card-bg.jpg) #f3f3f3 repeat-x 20px -60px;
+}
+
+.good-info .card .mall-price {
+    padding-left: 20px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.good-info .card span {
+    display: block;
+    float: left;
+}
+
+.good-info .card .mall-price span:nth-child(1) {
+    height: 24px;
+    line-height: 24px;
+    color: #8c8c8c;
+    margin-right: 5px;
+}
+
+.good-info .card .mall-price .price {
+    color: #f42424;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.good-info .card .mall-price .price::before {
+    content: '￥';
+}
+
+.good-info .card .depreciate {
+    width: 60px;
+    height: 20px;
+    margin: 3px 0 0 5px;
+    background: url(../images/dsc-icon.png) -298px -44px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.good-info .card .depreciate a {
+    color: #fff;
+}
+
+.good-info .card .evaluate {
+    margin: 5px 0 5px 155px;
+    height: 14px;
+    line-height: 14px;
+    padding-right: 10px;
+    border-right: 1px solid #d2d2d2;
+}
+
+.good-info .card .evaluate i {
+    font-size: 14px;
+    color: #b31919;
+}
+
+.good-info .card .sales {
+    margin: 5px 0 5px 10px;
+    height: 14px;
+    line-height: 14px;
+}
+
+.good-info .card .sales i {
+    font-size: 14px;
+    color: #b31919;
+}
+
+.good-info .card .VIP {
+    height: 27px;
+    padding-left: 80px;
+    margin-bottom: 5px;
+}
+
+.good-info .card .VIP span {
+    height: 27px;
+    line-height: 27px;
+}
+
+.good-info .card .VIP .icon-vip {
+    display: block;
+    width: 27px;
+    height: 27px;
+    background: url(../images/dsc-icon.png) no-repeat;
+    background-position: -1px -217px;
+    border-radius: 50%;
+    float: left;
+}
+
+.good-info .card .VIP span:nth-child(2) {
+    margin-left: 5px;
+}
+
+.good-info .card .VIP span:nth-child(3) {
+    color: #f42424;
+}
+
+.good-info .card .VIP span:nth-child(3)::before {
+    content: '￥';
+}
+
+.good-info .card .VIP span:nth-child(4) {
+    margin-left: 40px;
+}
+
+.good-info .card .VIP .phone-pay {
+    color: #8c8c8c;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.good-info .card .VIP .phone-pay:hover .ewm {
+    display: block;
+}
+
+.good-info .card .VIP .phone-pay .icon-erweima2 {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin: 5px;
+    line-height: 17px;
+}
+
+.good-info .card .VIP .phone-pay .ewm {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    top: 20px;
+    left: -85px;
+    padding: 20px;
+    display: none;
+    cursor: default;
+}
+
+.good-info .card .VIP .phone-pay .ewm img {
+    width: 100%;
+    height: 100%;
+}
+
+.good-info .card .bazaar {
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.good-info .card .bazaar span:nth-child(1) {
+    color: #8c8c8c;
+}
+
+.good-info .card .bazaar s:nth-child(2) {
+    margin-left: 20px;
+}
+
+.good-info .card .bazaar span:nth-child(2) {
+    margin-left: 15px;
+}

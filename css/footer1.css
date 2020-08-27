@@ -1,0 +1,238 @@
+.footer ul li {
+    float: none;
+}
+
+.footer {
+    background-color: #262626;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+/* 白色区域 */
+
+.footer-top {
+    width: 100%;
+    height: 80px;
+    background-color: #EEEEEE;
+}
+
+.footer-wrip {
+    height: 80px;
+}
+
+.footer-top ul {
+    width: 900px;
+    height: 32px;
+    margin: 24px 0 0 106px;
+}
+
+.footer-top ul li {
+    width: 170px;
+    height: 32px;
+    display: inline-block;
+}
+
+
+/* 精灵图 */
+
+.footer-top ul li i {
+    width: 32px;
+    height: 32px;
+    float: left;
+    background: url(../images/footer_new_icon.png) no-repeat;
+}
+
+.footer-top ul li:nth-child(2) i {
+    background-position: -34px 0;
+}
+
+.footer-top ul li:nth-child(3) i {
+    background-position: -68px 0;
+}
+
+.footer-top ul li:nth-child(4) i {
+    background-position: -102px 0;
+}
+
+.footer-top ul li:nth-child(5) i {
+    background-position: -136px 0;
+}
+
+.footer-top ul li span {
+    width: 125px;
+    height: 60px;
+    font-size: 18px;
+    color: #888;
+    margin-left: 12px;
+    float: left;
+}
+
+.footer-top-right {
+    width: 295px;
+    height: 32px;
+    margin: 24px 0;
+}
+
+.footer-top-right p {
+    height: 32px;
+    float: left;
+    line-height: 32px;
+}
+
+.footer-top-right p span {
+    display: inline-block;
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* 电话 */
+
+.footer-top-right p:first-of-type i {
+    width: 22px;
+    height: 24px;
+    margin-top: 5px;
+    float: left;
+    background: url(../images/footer_new_icon.png)no-repeat;
+    background-position: -3px -103px;
+}
+
+
+/* 电话号码 */
+
+.footer-top-right p:first-of-type span {
+    width: 140px;
+    margin-right: 10px;
+}
+
+
+/* 客服 */
+
+.footer-top-right p:last-of-type i {
+    width: 27px;
+    height: 24px;
+    margin-top: 4px;
+    float: left;
+    background: url(../images/footer_new_icon.png)no-repeat;
+    background-position: -3px -138px;
+}
+
+.footer-top-right p:last-of-type span {
+    width: 80px;
+}
+
+
+/* 鼠标变小手 */
+
+.footer-top-right p:last-of-type {
+    cursor: pointer;
+}
+
+
+/* 尾巴中部 */
+
+.footer-center .fnc-warp {
+    width: 1190px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #464646;
+}
+
+.footer-center .fnc-warp .help-list {
+    width: 900px;
+}
+
+.footer-center .fnc-warp .help-list .help-item {
+    float: left;
+    width: 170px;
+    padding-right: 10px;
+}
+
+.footer-center .fnc-warp .help-list .help-item h3 {
+    width: 170px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-center .fnc-warp .help-list .help-item li {
+    line-height: 28px;
+}
+
+.footer-center .fnc-warp .help-list .help-item li a {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.fnc-warp .qr-code {
+    width: 276px;
+}
+
+.fnc-warp .qr-code .qr-item {
+    width: 104px;
+    padding: 2px;
+    background-color: #fff
+}
+
+
+/* 图片大小 */
+
+.fnc-warp .qr-code .qr-item .code_img {
+    width: 104px;
+    height: 104px;
+}
+
+.fnc-warp .qr-code .qr-item .code_img img {
+    width: 104px;
+    height: 104px;
+    display: inline-block;
+}
+
+.fnc-warp .qr-code .qr-item .text {
+    width: 100%;
+    height: 20px;
+    background-color: #121212;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* 尾巴底部 */
+
+.footer-bot {
+    padding: 30px 0 20px;
+    font-size: 12px;
+}
+
+.footer-bot .copyright_links {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-bot .copyright_links a {
+    display: inline-block;
+    color: #888;
+}
+
+.footer-bot .copyright_links span {
+    margin: 0 17px;
+    width: 1px;
+    height: 11px;
+    background-color: #444;
+    display: inline-block;
+}
+
+.footer-bot .copyright_auth {
+    padding-top: 15px;
+}
+
+
+/* 鼠标盘旋变红 */
+
+footer a:hover {
+    color: #f55 !important;
+}

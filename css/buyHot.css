@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff2') format('woff2'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header-cat {
+    width: 180px;
+    background-color: #DD0909;
+}
+
+header.header {
+    border-bottom: 2px solid #DD0909;
+}
+
+
+/* 头部 */
+
+.bigheader {
+    width: 100%;
+    background-color: #fff;
+}
+
+#bannerNav {
+    position: relative;
+}
+
+#bannerNav .left-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 286px;
+    background-color: #000;
+    color: #fff;
+}
+
+#bannerNav .left-list .con-list {
+    width: 180px;
+    height: 40px;
+    text-align: left;
+    line-height: 39px;
+    border-bottom: 1px dotted #555;
+    font-size: 14px;
+}
+
+#bannerNav .left-list .con-list i {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+#bannerNav .left-list .con-list:hover {
+    background-color: #F43434;
+}
+
+#bannerNav .rightimg {
+    width: 100%;
+    height: 286px;
+}
+
+#bannerNav .rightimg img {
+    width: 100%;
+    height: 286px;
+}
+
+.header-enter span .log {
+    color: #000;
+}
+
+.goPay a {
+    color: #fff;
+}
+
+
+/* 疯狂团购 */
+
+#crazy-group {
+    background: #F8F8F8;
+    padding: 40px 0 80px 0;
+}
+
+#crazy-group .article-group {
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+#crazy-group .article-group .h2 {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    font-size: 28px;
+    padding-left: 40px;
+    font-weight: 400;
+    background: url(../images/crazy-icon.png) no-repeat left center;
+}
+
+#crazy-group .crazy-list ul li {
+    width: 232px;
+    margin-right: 10px;
+    background: #fff;
+    float: left;
+    transition: all .3s;
+}
+
+#crazy-group .crazy-list ul li img {
+    width: 232px;
+    height: 232px;
+}
+
+#crazy-group .crazy-list ul li .price {
+    color: #f43434;
+    font-size: 21px;
+    text-align: center;
+}
+
+#crazy-group .crazy-list ul li .name {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 10px 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+#crazy-group .crazy-list ul li .lefttime {
+    margin: 10px;
+    vertical-align: middle;
+}
+
+#crazy-group .crazy-list ul li .lefttime i {
+    font-size: 12px;
+}
+
+#crazy-group .crazy-list ul li .lefttime span {
+    font-size: 12px;
+    color: #555;
+}
+
+#crazy-group .crazy-list ul li .lefttime em {
+    margin: 0 2px;
+}
+
+#crazy-group .crazy-list ul li .lefttime .time {
+    margin: 0 10px;
+}
+
+em {
+    font-style: normal;
+}
+
+#crazy-group .crazy-list ul li .groupTo {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: #f43434;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+
+#crazy-group .article-group h2:last-child {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    font-size: 28px;
+    /* padding-left: 40px; */
+    font-weight: 400;
+}
+
+#crazy-group .crazy-list ul li:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    transform: translate3d(0, -3px, 0);
+}
+
+#crazy-group .allGroup {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #d2d2d2;
+    text-align: center;
+    transition: all .3s;
+    color: #555;
+}
+
+#crazy-group .allGroup:hover {
+    background: #d2d2d2;
+    color: #555;
+}

@@ -1,0 +1,1102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    outline-style: none;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+em {
+    font-style: normal;
+}
+
+.site-nav a,
+.site-nav {
+    font-size: 12px!important;
+}
+
+
+/* 头部 */
+
+head {
+    width: 100%;
+    height: 112px;
+}
+
+
+/**********/
+
+.site-nav {
+    background: #eee;
+    margin-bottom: 1px;
+}
+
+.lay-out {
+    height: 30px;
+    line-height: 30px;
+    color: #8c8c8c;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.site-nav .lay-out .fl {
+    width: 180px;
+    height: 30px;
+    position: relative;
+}
+
+.site-nav .lay-out .city-choice {
+    width: 72px;
+    height: 30px;
+    float: left;
+}
+
+.site-nav .lay-out .text-info {
+    float: left;
+    margin-left: 15px;
+}
+
+
+/********/
+
+.header-if {
+    width: 70px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+
+/* 位置搜索 */
+
+.header-location {
+    width: 443px;
+    height: 236px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background-color: white;
+    z-index: 999;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+.header-location>div {
+    margin-left: 20px;
+    width: 415px;
+}
+
+.header-hot {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.header-hot a {
+    color: #555;
+    margin-right: 10px;
+    padding: 2px 5px;
+}
+
+.header-hot a:hover {
+    color: white;
+    background-color: red;
+}
+
+.header-letter:hover {
+    cursor: pointer;
+}
+
+.header-letter a {
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-right: 3px;
+    font-weight: 700;
+}
+
+.header-letter a:hover {
+    color: red;
+}
+
+.header-scrollboty {
+    /* width: 100%; */
+    height: 145px;
+}
+
+.header-location .header-scrollboty .header-allList {
+    width: 400px;
+    height: 145px;
+    overflow: hidden;
+    position: relative;
+}
+
+#header-lists {
+    position: absolute;
+    top: 0;
+}
+
+#header-lists li {
+    width: 400px;
+    height: 50px;
+}
+
+#header-lists li em {
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #8c8c8c;
+    font-weight: 700;
+}
+
+#header-lists li div {
+    float: left;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#header-lists li div a {
+    padding: 3px 10px;
+    color: #555;
+}
+
+#header-lists li div a:hover {
+    background-color: #eee;
+    color: red;
+}
+
+.header-scorllBar {
+    float: left;
+    width: 7px;
+    height: 130px;
+    position: relative;
+    background: url(../images/change_city.png) -7px 0 repeat-y;
+    top: 5px;
+}
+
+.header-bar {
+    position: absolute;
+    top: 0;
+    width: 7px;
+    height: 30px;
+    background: url(../images/change_city.png) 0 0 no-repeat;
+}
+
+
+/*********/
+
+.site-nav .lay-out .text-info .red {
+    color: red;
+}
+
+.site-nav .lay-out .text-info a:hover {
+    color: #e23435;
+}
+
+.site-nav .lay-out .quck-menu {
+    width: 386px;
+    height: 30px;
+    float: right;
+    position: relative;
+}
+
+.site-nav .lay-out .quck-menu li {
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.site-nav .lay-out .quck-menu .spacer {
+    overflow: hidden;
+    margin: 11px 5px 0;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+
+.site-nav .lay-out .quck-menu li:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.site-nav .lay-out .quck-menu li .dt {
+    width: 52px;
+    height: 30px;
+    padding: 0 7px;
+    display: inline-block;
+}
+
+.site-nav .lay-out .quck-menu li.li_dropdown .dt {
+    width: 66px;
+    height: 27px;
+    padding: 0 7px 2px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    cursor: pointer;
+    display: block;
+    z-index: 8;
+}
+
+.site-nav .lay-out .quck-menu li.li_dropdown .dt i {
+    position: absolute;
+    font-size: 12px;
+    top: -1px;
+    left: 68px;
+}
+
+.quck-menu a {
+    color: #8c8c8c;
+    display: block;
+}
+
+.quck-menu li a:hover {
+    color: #e23435;
+}
+
+.quck-menu li.li_dropdown .dd {
+    width: 380px;
+    height: 118px;
+    padding: 18px 0px;
+    min-width: 380px;
+    background-color: #fff;
+    border: 1px solid #d2d2d2;
+    position: absolute;
+    top: 29px;
+    right: 0;
+    z-index: 2;
+    display: none;
+}
+
+.quck-menu li.li_dropdown .dd .fore1 {
+    float: left;
+    padding-left: 30px;
+    border-right: 1px solid #efefef;
+    width: 85px;
+}
+
+.quck-menu li.li_dropdown .dd .fore2 {
+    width: 225px;
+    border-right: none;
+    float: left;
+    padding-left: 30px;
+}
+
+.quck-menu li.li_dropdown .dd .fore2 strong {
+    float: left;
+}
+
+.quck-menu li.li_dropdown .dd .fore2 dd {
+    float: left;
+    width: 225px;
+    height: 88px;
+}
+
+.quck-menu li.li_dropdown .dd .fore2 dd a {
+    text-align: left;
+}
+
+.dd .fore2 dd .item {
+    float: left;
+    width: 75px;
+}
+
+
+/*****/
+
+
+/* 头部版心 */
+
+.head-content {
+    width: 1200px;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+}
+
+
+/* logo */
+
+.head-logo {
+    width: 290px;
+    height: 100px;
+    float: left;
+}
+
+
+/* 左侧logo图片 */
+
+.logo-left {
+    width: 180px;
+    height: 100px;
+    float: left;
+}
+
+.head-logo a {
+    display: table-cell;
+    height: 100px;
+    vertical-align: middle;
+}
+
+
+/* 右侧logo计数 */
+
+.head-logo .logo-right {
+    float: right;
+    font-size: 18px;
+    color: #8c8c8c;
+    margin-top: 36px;
+}
+
+
+/* 头部搜索 */
+
+.head-search {
+    width: 400px;
+    height: 34px;
+    margin-top: 30px;
+    float: right;
+}
+
+.head-search input {
+    border-width: 1px;
+    padding: 9px 8px;
+    width: 332px;
+    height: 34px;
+    border: 1px solid #f42424;
+    outline: 0;
+    font-size: 12px;
+    float: left;
+    color: #999;
+    font-weight: inherit;
+}
+
+.head-search button {
+    border: 0;
+    width: 50px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #f42424;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    float: left;
+    outline: 0;
+}
+
+.head-search button i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/search.png) no-repeat;
+    margin-top: 7px;
+}
+
+.head-content::after {
+    content: '';
+    width: 129%;
+    height: 0px;
+    border: 2px solid #f42424;
+    position: absolute;
+    top: 110px;
+    left: -200px;
+}
+
+
+/* 商品 */
+
+main {
+    width: 1200px;
+    /* height: auto; */
+    height: 1280px;
+    margin: 0 auto;
+}
+
+.warp {
+    width: 100%;
+    height: auto;
+    height: 1280;
+}
+
+.cart-filter {
+    width: 100%;
+    height: 36px;
+}
+
+.warp .cart-filter-left {
+    overflow: hidden;
+    height: 36px;
+    float: left;
+}
+
+.car-step-item {
+    width: 150px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    float: left;
+}
+
+.car-step-item:last-child {
+    width: 95px;
+}
+
+.car-step-item .icon-tubiaozhizuomoban {
+    color: #ff8f23;
+}
+
+.warp .cart-filter-left .curr span {
+    background-color: #ff8f23;
+    border-color: #ff8f23;
+    color: #fff;
+    display: inline-block;
+    width: 126px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #f8f8f8;
+    border-radius: 18px;
+}
+
+.warp .cart-filter-left .iconfont.icon-V {
+    margin-left: 5px;
+    color: #ff8f23;
+}
+
+main .warp .cart-filter-left .car-step-item .right-2 {
+    margin-left: 15px;
+    color: #d2d2d2;
+}
+
+.cart-filter-right {
+    float: right;
+    color: #8c8c8c;
+    position: relative;
+    margin-top: 8px;
+}
+
+.txt {
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.selector {
+    float: left;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.temp {
+    width: 80px;
+    margin-right: 5px;
+    font-size: 14px;
+    border: 1px solid #eee;
+}
+
+
+/* 购物车列表 */
+
+.car-table {
+    position: relative;
+    margin-top: 16px;
+    width: 100%;
+    height: 800px;
+}
+
+.car-head {
+    background-color: #fff;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+}
+
+.car-checkbox {
+    width: 150px;
+    height: 50px;
+    padding-left: 20px;
+    float: left;
+    position: relative;
+}
+
+.car-checkbox input {
+    display: none;
+}
+
+.car-checkbox .lab-all {
+    background: url(../images/checkbox.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-top: 18px;
+}
+
+.container .warp .car-table .active {
+    background: url(../images/checked_solid.png) no-repeat;
+}
+
+.container .warp .car-table .car-tbody .active {
+    background: url(../images/checked_solid.png) no-repeat;
+}
+
+.car-head .c-goods {
+    width: 430px;
+}
+
+.car-head .c-props {
+    width: 122px;
+}
+
+.car-head .c-price {
+    width: 166px;
+}
+
+.car-head .c-quantity {
+    width: 132px;
+}
+
+.car-head .c-sum {
+    width: 120px;
+}
+
+.car-head .c-action {
+    width: 60px;
+}
+
+.column {
+    float: left;
+    height: 50px;
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.car-checkbox input {
+    width: 15px;
+}
+
+.car-tbody {
+    margin-top: 10px;
+}
+
+.car-tbody .shop {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.shop-check {
+    padding-left: 20px;
+    float: left;
+}
+
+.car-tbody .shop .shop-check label:first-of-type {
+    background: url(../images/checkbox.png) no-repeat;
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 18px;
+}
+
+.car-tbody .shop .shop-check input {
+    display: none;
+}
+
+#car-shop {
+    width: 18px;
+}
+
+.car-tbody .shop a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.kefu {
+    color: #7b75f3;
+    font-size: 16px;
+}
+
+.kefu1 {
+    color: #fcc217;
+    font-size: 16px;
+}
+
+.item-list {
+    width: 1160px;
+    height: 102px;
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.item-single {
+    width: 1160px;
+    height: 102px;
+    position: relative;
+    border-bottom: 0;
+}
+
+.item-item {
+    padding: 15px 0 15px 75px;
+    position: relative;
+}
+
+.item-list .item-single .item-item {
+    width: 1085px;
+    height: 72px;
+    padding: 15px 0 15px 75px;
+    position: relative;
+}
+
+.item-list .item-single .item-item .item-form {
+    position: relative;
+    width: 1085px;
+    height: 72px;
+}
+
+.item-list .item-single .item-item .checkbox {
+    width: 41px;
+    height: 17px;
+    position: absolute;
+    left: -75px;
+    z-index: 2;
+    padding-left: 20px;
+    float: left;
+}
+
+.soncheck {
+    display: none;
+}
+
+.checkbox label:last-child {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../images/checkbox.png) no-repeat;
+}
+
+.item-list .item-single .item-item .item-form .s-goods {
+    width: 625px;
+    height: 72px;
+}
+
+.item-list .item-single .item-item .item-form .s-price {
+    width: 140px;
+    padding: 0px 28px 0 0;
+    height: 24px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.item-list .item-single .item-item .item-form .s-quantity {
+    width: 60px;
+    height: 50px;
+    padding: 0px 72px 0 0;
+}
+
+.item-list .item-single .item-item .item-form .s-sum {
+    width: 111px;
+    padding: 0px 10px 0 0;
+}
+
+.item-list .item-single .item-item .item-form .s-action {
+    width: 24px;
+    height: 40px;
+}
+
+.item-form .goods-item .p-img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #d2d2d2;
+}
+
+.item-form .s-goods .goods-item {
+    width: 360px;
+    height: 72px;
+}
+
+.item-form .s-goods .goods-item .item-message {
+    float: left;
+    width: calc(100% - 92px);
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.item-form .goods-item .p-img img {
+    width: 70px;
+    height: 70px;
+}
+
+.item-form .s-price span::before {
+    content: '￥';
+}
+
+.item-form .s-quantity .amount {
+    overflow: hidden;
+    float: right;
+    margin-bottom: 2px;
+}
+
+.item-form .s-quantity .amount input {
+    border: 1px solid #d2d2d2;
+    width: 24px;
+    height: 28px;
+    float: left;
+    outline: 0;
+    text-align: center;
+}
+
+.s-quantity .amount button {
+    float: left;
+    width: 22px;
+    height: 15px;
+    border: 1px solid #d2d2d2;
+    border-left: 0;
+}
+
+.item-form .s-sum span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+
+.item-form .s-sum span::before {
+    content: '￥';
+}
+
+.item-form .s-action a {
+    font-size: 12px;
+    color: #438cde;
+}
+
+.item-form .s-action a:hover {
+    color: #f42424;
+}
+
+
+/* 脚部 */
+
+.car-tfoot {
+    margin-top: 10px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.car-tfoot .layout {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.car-tfoot .layout div {
+    padding-left: 20px;
+    float: left;
+}
+
+.car-tfoot .layout div input {
+    display: none;
+}
+
+.car-tfoot .layout div label {
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-top: 18px;
+    background: url(../images/checkbox.png) no-repeat;
+}
+
+.car-tfoot .layout .operation {
+    float: left;
+    width: 230px;
+    height: 50px;
+}
+
+.car-tfoot .layout .operation a {
+    margin-left: 20px;
+    color: #8c8c8c;
+}
+
+.car-tfoot .layout .toolbar-right {
+    width: 674px;
+    height: 50px;
+    float: right;
+}
+
+.car-tfoot .layout .toolbar-right .comm-right {
+    width: 674px;
+    height: 50px;
+    float: right;
+}
+
+.toolbar-right .comm-right .btn-area {
+    float: right;
+    height: 50px;
+}
+
+.toolbar-right .comm-right .btn-area button {
+    width: 160px;
+    height: 50px;
+    border: 0;
+    background-color: #f42424;
+    color: #fff;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+}
+
+.toolbar-right .comm-right .price-sum {
+    width: 234px;
+    height: 50px;
+    float: left;
+}
+
+.toolbar-right .comm-right .price-sum span:last-child {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f42424;
+}
+
+.toolbar-right .comm-right .price-sum .sps::before {
+    content: '￥';
+}
+
+.toolbar-right .comm-right .reduce-sum {
+    width: 97px;
+    height: 50px;
+    float: left;
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 50px;
+}
+
+.toolbar-right .comm-right .reduce-sum span:last-child {
+    color: #333;
+}
+
+.toolbar-right .comm-right .amount-sum {
+    width: 103px;
+    height: 50px;
+    float: left;
+}
+
+.toolbar-right .comm-right .amount-sum em {
+    font-style: normal;
+    color: #f42424;
+    margin: 0 5px;
+}
+
+
+/* 猜你喜欢 */
+
+.p-panel-main {
+    margin: 50px auto 0;
+    width: 1200px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+
+.ftit {
+    background: url(../images/dian-ico2.png) repeat-x 0 18px;
+    overflow: hidden;
+    padding: 0 0 20px;
+    height: 35px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 33px;
+}
+
+.ftit h3 {
+    background-color: #f8f8f8;
+    display: inline;
+    padding: 0 50px;
+    font-weight: 400;
+    font-size: 21px;
+    color: #555;
+}
+
+.gl-list {
+    width: 1200px;
+    height: 275px;
+}
+
+.gl-list ul {
+    width: 1200px;
+    height: 275px;
+}
+
+.gl-list li {
+    margin-right: 12px;
+}
+
+.p-panel-main .gl-list li {
+    float: left;
+    width: 190px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    margin-right: 10px;
+}
+
+.p-panel-main .gl-list li .p-img {
+    width: 190px;
+    height: 190px;
+    position: relative;
+}
+
+.p-panel-main .gl-list li .p-img:hover .modalimg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.p-panel-main .gl-list li .p-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.p-panel-main .gl-list li .p-price {
+    font-size: 20px;
+    margin-top: 6px;
+    color: #f42424;
+}
+
+.p-panel-main .gl-list li .p-name {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.p-panel-main .gl-list li .p-name a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+}
+
+.p-panel-main .gl-list li .p-num {
+    margin-top: 7px;
+    color: #8c8c8c;
+}
+
+.p-num em {
+    font-weight: bold;
+}
+
+
+/* 蒙版 */
+
+.modal-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+.modal-box,
+.modal-box1 {
+    width: 455px;
+    height: 195px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, .1);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    z-index: 100009;
+    margin-left: -230px;
+    margin-top: -100px
+}
+
+.modal-box {
+    display: none;
+}
+
+.first,
+.second {
+    width: 415px;
+    height: 155px;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+.first .text,
+.second .text {
+    line-height: 60px;
+    float: left;
+    display: block;
+}
+
+.first button,
+.second button {
+    width: 25%;
+    height: 40px;
+}
+
+.first button:first-of-type,
+.second button:first-of-type {
+    background: #eee;
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
+}
+
+.first button:last-child,
+.second button:last-child {
+    background-color: rgb(233, 51, 51);
+    position: absolute;
+    bottom: 8px;
+    left: 15px;
+}
+
+.modal-box1 {
+    display: none;
+}
